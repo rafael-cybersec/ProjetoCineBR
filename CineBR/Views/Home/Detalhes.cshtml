@@ -1,0 +1,32 @@
+﻿@model CineBR.Models.HomeViewModel
+
+@using Microsoft.AspNetCore.Http;
+
+@{
+    var idFilmeStr = Context.Request.Query["id"];
+    int.TryParse(idFilmeStr, out int idFilme);
+    var filmeSelecionado = Model.Filmes.FirstOrDefault(f => f.Id == idFilme);
+}
+
+<main>
+    @if (filmeSelecionado != null)
+    {
+        <section class="movie-details">
+            <h1>@filmeSelecionado.Titulo</h1>
+            <div class="details-wrapper">
+                <img src="@filmeSelecionado.Capa" alt="@filmeSelecionado.Titulo">
+                <div class="details-content">
+                    <p><strong>Resumo:</strong> @filmeSelecionado.Resumo</p>
+                    <p><strong>Diretor:</strong> @filmeSelecionado.Diretor</p>
+                    <p><strong>Elenco:</strong> @string.Join(", ", filmeSelecionado.Elenco)</p>
+                    <p><strong>Duração:</strong> @filmeSelecionado.Duracao minutos</p>
+                    <p><strong>Gênero:</strong> @string.Join(", ", filmeSelecionado.Genero)</p>
+                </div>
+            </div>
+        </section>
+    }
+    else
+    {
+        <p>Filme não encontrado.</p>
+    }
+</main>

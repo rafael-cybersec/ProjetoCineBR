@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "titulo": "Filme X",
+    "resumo": "Descrição detalhada do filme X.",
+    "diretor": "Diretor X",
+    "elenco": [ "Ator 1", "Ator 2", "Ator 3" ],
+    "duracao": 120,
+    "genero": [ "Drama", "Suspense" ],
+    "capa": "image/filme-01.jpg"
+  },
+  {
+    "id": 2,
+    "titulo": "Filme Y",
+    "resumo": "Descrição detalhada do filme Y.",
+    "diretor": "Diretor Y",
+    "elenco": [ "Ator A", "Ator B" ],
+    "duracao": 95,
+    "genero": [ "Comédia" ],
+    "capa": "image/filme-02.jpg"
+  }
+]

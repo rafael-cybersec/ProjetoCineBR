@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineBR</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Link Swiper CSS -->
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Box Icons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="/" class="logo">
+                Cine<span>Br</span>
+            </a>
+            <!-- Search Box -->
+            <div class="search-box">
+                <input type="search" id="search-input" placeholder="Pesquisar Filme">
+                <i class='bx bx-search'></i>
+            </div>
+            <!-- User -->
+            <a href="#" class="user">
+                <img src="/image/user.png" alt="" class="user-img">
+            </a>
+            <!-- NavBar -->
+            <div class="navbar">
+                <a href="/" class="nav-link nav-active">
+                    <i class='bx bx-home'></i>
+                    <span class="nav-link-title">Início</span>
+                </a>
+                <a href="/Home/EmAlta" class="nav-link">
+                    <i class='bx bxs-hot'></i>
+                    <span class="nav-link-title">Em Alta</span>
+                </a>
+                <a href="/Home/Filmes" class="nav-link">
+                    <i class='bx bx-tv'></i>
+                    <span class="nav-link-title">Filmes</span>
+                </a>
+                <a href="/Home/Favoritos" class="nav-link">
+                    <i class='bx bx-heart'></i>
+                    <span class="nav-link-title">Favoritos</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2024 CineBR - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
