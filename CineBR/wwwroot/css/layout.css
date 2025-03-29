@@ -1,0 +1,151 @@
+﻿/* Centralização */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Cabeçalho */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--body-color);
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 1.4rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+    .logo span {
+        color: var(--main-color);
+    }
+
+/* Barra de Navegação Lateral */
+.navbar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 18px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.1rem;
+    z-index: 1000;
+}
+
+.nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #b7b7b7;
+}
+
+    .nav-link:hover,
+    .nav-active {
+        color: var(--text-color);
+        transition: 0.3s all linear;
+        transform: scale(1.1);
+    }
+
+
+/* Imagem do Usuário */
+.user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--main-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Barra de Pesquisa */
+.search-box {
+    display: flex;
+    align-items: center;
+    column-gap: 0.7rem;
+    padding: 8px 15px;
+    background: var(--container-color);
+    border-radius: 4rem;
+    margin-left: 80px; /* Ajuste de posição em relação ao menu lateral */
+}
+
+    .search-box .bx:hover {
+        color: var(--main-color);
+    }
+
+#search-input {
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    background: transparent;
+    width: 100%;
+}
+
+/* Grid de Filmes */
+.movies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px); /* Cada item terá exatamente 200px de largura */
+    gap: 20px;
+    justify-content: center; /* Centraliza os itens na página */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    /* Estilo para os itens */
+    .movies-grid > div {
+        background-color: #2d2e37;
+        width: 200px; /* Largura fixa */
+        height: 300px; /* Altura fixa */
+        border-radius: 80px;
+        padding: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+/* Cartão de Filme */
+.movie-card {
+    background-color: var(--container-color);
+    color: var(--text-color);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .movie-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .movie-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .movie-card h3 {
+        margin-top: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .movie-card p {
+        margin-top: 5px;
+        font-size: 0.875rem;
+        color: #b7b7b7;
+    }
+
+

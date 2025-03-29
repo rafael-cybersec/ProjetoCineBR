@@ -1,0 +1,184 @@
+﻿@{
+    ViewData["Title"] = "Cadastro/Login";
+}
+
+<h2>Cadastro/Login</h2>
+
+@if (ViewBag.Mensagem != null)
+{
+    <p style="color: red;">@ViewBag.Mensagem</p>
+}
+
+<div class="auth-container">
+    <div class="tabs">
+        <button id="btnCadastro" class="tab-btn ativo" onclick="mostrarCadastro()">Cadastrar</button>
+        <button id="btnLogin" class="tab-btn" onclick="mostrarLogin()">Entrar</button>
+    </div>
+
+    <!-- Formulário de Cadastro -->
+    <div class="auth-form" id="formCadastro" style="display:block;">
+        <!-- Exibir mensagem de erro se houver -->
+        @if (ViewBag.MensagemCadastroErro != null)
+        {
+            <div class="error-message">@ViewBag.MensagemCadastroErro</div>
+        }
+        <form method="post" action="/Usuario/Cadastrar">
+            <input type="text" name="Nome" placeholder="Nome" required>
+            <input type="email" name="Email" placeholder="Email" required>
+            <input type="password" name="Senha" placeholder="Senha" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Formulário de Login -->
+    <div class="auth-form" id="formLogin" style="display:none;">
+        <!-- Exibir mensagem de erro se houver -->
+        @if (ViewBag.MensagemLoginErro != null)
+        {
+            <div class="error-message">@ViewBag.MensagemLoginErro</div>
+        }
+        <form method="post" action="/Usuario/Login">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="senha" placeholder="Senha" required>
+            <button type="submit">Entrar</button>
+        </form>
+    </div>
+</div>
+
+<!-- JavaScript para alternar entre as abas e marcar a ativa -->
+<script>
+    function mostrarCadastro() {
+        document.getElementById("formCadastro").style.display = "block";
+        document.getElementById("formLogin").style.display = "none";
+
+        // Marca o botão ativo sem remover o outro
+        document.getElementById("btnCadastro").classList.add("ativo");
+        document.getElementById("btnLogin").classList.remove("ativo");
+    }
+
+    function mostrarLogin() {
+        document.getElementById("formCadastro").style.display = "none";
+        document.getElementById("formLogin").style.display = "block";
+
+        // Marca o botão ativo sem remover o outro
+        document.getElementById("btnLogin").classList.add("ativo");
+        document.getElementById("btnCadastro").classList.remove("ativo");
+    }
+</script>
+
+
+
+<style>
+    /* Container principal */
+    .auth-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 100px;
+        background-color: var(--container-color); /* Cor do seu site */
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Estilos das abas (Cadastrar / Entrar) */
+    .tabs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
+
+        .tabs button {
+            width: 48%;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #2d2e37; /* Cor escura */
+            border: 1px solid #444; /* Borda ajustada */
+            border-radius: 5px;
+            color: var(--text-color); /* Cor do texto */
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+            /* Efeito de hover nos botões */
+            .tabs button:hover {
+                background-color: var(--main-color); /* Cor ao passar o mouse */
+                color: var(--text-color); /* Cor do texto */
+            }
+
+    /* Aba ativa (botão selecionado) */
+    .tab-btn.ativo {
+        border-bottom: 3px solid #ffffff; /* Marcação da aba ativa */
+        font-weight: bold;
+        background-color: #3a3b45; /* Destaque na aba ativa */
+    }
+
+    /* Estilo para os formulários (Cadastro / Login) */
+    .auth-form {
+        display: none;
+        padding: 20px;
+        background-color: var(--container-color); /* Fundo */
+        border: 1px solid #444;
+        border-radius: 5px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Exibição de mensagens de erro */
+    .error-message {
+        color: red;
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    /* Formulários (inputs e botões) */
+    .auth-form input,
+    .auth-form button {
+        width: 100%;
+        padding: 12px;
+        margin: 8px 0;
+        border: 1px solid #444;
+        border-radius: 5px;
+        box-sizing: border-box;
+        background-color: #2d2e37; /* Cor de fundo */
+        color: var(--text-color);
+    }
+
+        /* Ajuste do foco nos campos */
+        .auth-form input:focus,
+        .auth-form button:focus {
+            border-color: var(--main-color);
+            outline: none;
+        }
+
+    /* Botão de envio do formulário */
+    .auth-form button {
+        background-color: var(--main-color);
+        color: var(--text-color);
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+        .auth-form button:hover {
+            background-color: var(--hover-color);
+        }
+
+    /* Exibição inicial do formulário correto */
+    #formCadastro {
+        display: block;
+    }
+
+    #formLogin {
+        display: none;
+    }
+
+    /* Título centralizado */
+    h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+</style>
+

@@ -6,6 +6,7 @@
     <title>CineBR</title>
     <!-- CSS -->
     <link rel="stylesheet" href="/css/style.css">
+
     <!-- Link Swiper CSS -->
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
     <!-- Fav Icon -->
@@ -27,10 +28,25 @@
                 <input type="search" id="search-input" placeholder="Pesquisar Filme">
                 <i class='bx bx-search'></i>
             </div>
-            <!-- User -->
-            <a href="#" class="user">
-                <img src="/image/user.png" alt="" class="user-img">
-            </a>
+
+            <!-- Botões Cadastro/Login ou Logout -->
+            <div class="auth-buttons">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <p>Bem-vindo, @User.Identity.Name!</p>
+                    <a href="/Usuario/Logout" class="btn-logout">
+                        <i class='bx bx-log-out'></i>
+                    </a>
+                }
+                else
+                {
+                    <a href="/Usuario/CadastroLogin" class="btn-auth">
+                        <i class='bx bx-user-plus'></i>
+                    </a>
+                }
+            </div>
+
+
             <!-- NavBar -->
             <div class="navbar">
                 <a href="/" class="nav-link nav-active">
@@ -59,10 +75,12 @@
     </main>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="copyright">
             <p>&copy; 2024 CineBR - Todos os direitos reservados.</p>
         </div>
+
+
     </footer>
 
     <!-- Scripts -->

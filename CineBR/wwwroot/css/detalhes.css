@@ -1,0 +1,179 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Estilos Específicos da Página de Detalhes */
+.movie-details {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.movie-title {  
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.details-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+}
+
+.left-column {
+    background-color: var(--container-color);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.movie-cover {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a página de detalhes do filme */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2a; /* Fundo escuro */
+    color: #fcfeff; /* Texto claro */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container principal da página */
+.details-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movie-details {
+    background-color: #33343f;  
+}
+/* Box do título do filme */
+.movie-title {
+    grid-column: span 3;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fcfeff; /* Verde para o título */
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Coluna da arte e informações do filme */
+.left-column {
+    background-color: #2d2e37; /* Fundo das boxes */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/* Coluna da arte e informações do filme */
+.right-column {
+    background-color: #2d2e37; /* Fundo das boxes */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+.movie-poster {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.info-box {
+    background-color: #33343f; /* Fundo escuro para informações */
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+    .info-box h3 {
+        margin-bottom: 10px;
+        color: #009714;
+        font-size: 1.2rem;
+    }
+
+    .info-box p span {
+        color: #009714; /* Links em verde */
+        text-decoration: none;
+    }
+
+/* Coluna do trailer */
+.trailer-box {
+
+    background-color: #2d2e37;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+    .trailer-box iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 8px;
+        margin-top: 10px;
+    }
+
+    .trailer-box h2 {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+        color: #fcfeff;
+    }
+
+
+
+
+/* Elenco */
+.diretor {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os blocos se ajustem às linhas */
+    gap: 2px; /* Espaçamento entre os blocos */
+    padding-top: 10px;
+    border: none;
+}
+
+/* Diretor */
+.exibirdiretor {
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: #33343f; /* Fundo escuro */
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fcfeff;
+}
+
+/* Elenco */
+.elenco {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os blocos se ajustem às linhas */
+    gap: 2px; /* Espaçamento entre os blocos */
+    padding-top: 10px;
+    border: none;
+}
+
+.ator {
+
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: #33343f; /* Fundo escuro */
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    font-size: 12px;
+    color: #fcfeff;
+
+}
+

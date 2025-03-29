@@ -1,0 +1,30 @@
+[
+  {
+    "Id": "0d3cb498-2548-448a-96e5-2e300b476d43",
+    "Nome": "teste1",
+    "Email": "teste1@gmail.com",
+    "Senha": "123123",
+    "Tipo": "Usuario"
+  },
+  {
+    "Id": "5b14b7b4-fd11-4287-b293-d084530b5d91",
+    "Nome": "teste2",
+    "Email": "teste2@gmail.com",
+    "Senha": "123123",
+    "Tipo": "Usuario"
+  },
+  {
+    "Id": "2c32895f-11c5-4bf4-a625-e4df79c178e4",
+    "Nome": "teste3",
+    "Email": "teste3@gmail.com",
+    "Senha": "123123",
+    "Tipo": "Usuario"
+  },
+  {
+    "Id": "99fde3d4-97e0-4a18-b3ec-76890790af59",
+    "Nome": "JOAO",
+    "Email": "joao@gmail.com",
+    "Senha": "123123",
+    "Tipo": "Usuario"
+  }
+]

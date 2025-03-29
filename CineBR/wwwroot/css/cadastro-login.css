@@ -1,0 +1,100 @@
+﻿/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #1e1e2a; /* Fundo escuro */
+    color: #fcfeff; /* Texto claro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #2d2e37; /* Fundo do container */
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h2 {
+    color: #009714; /* Verde para o título */
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+    form div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+label {
+    font-size: 0.9rem;
+    color: #b7b7b7; /* Texto cinza claro */
+    text-align: left;
+}
+
+input {
+    padding: 0.75rem;
+    border: 1px solid #444; /* Borda cinza escuro */
+    border-radius: 4px;
+    background-color: #33343f; /* Fundo do input */
+    color: #fcfeff; /* Texto claro */
+    font-size: 0.9rem;
+    outline: none;
+}
+
+    input:focus {
+        border-color: #009714; /* Borda verde ao focar */
+    }
+
+button {
+    padding: 0.75rem;
+    background-color: #009714; /* Verde para o botão */
+    color: #fcfeff; /* Texto claro */
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #007a0f; /* Verde mais escuro ao passar o mouse */
+    }
+
+/* Mensagem de Erro */
+.mensagem-erro {
+    color: #ff4d4d; /* Vermelho para mensagens de erro */
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+/* Link para Alternar entre Cadastro e Login */
+.alternar-acao {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #b7b7b7; /* Texto cinza claro */
+}
+
+    .alternar-acao a {
+        color: #009714; /* Verde para o link */
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+        .alternar-acao a:hover {
+            text-decoration: underline;
+        }

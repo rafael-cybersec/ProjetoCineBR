@@ -1,23 +1,52 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
-using System.IO;
 using CineBR.Models;
 
-public class HomeController : Controller
+namespace CineBR.Controllers
 {
-    private readonly string jsonPath = "wwwroot/data/filmes.json";
-
-    public IActionResult Detalhes()
+    public class HomeController : Controller
     {
-        var json = System.IO.File.ReadAllText(jsonPath);
-        var filmes = JsonConvert.DeserializeObject<List<Filme>>(json);
+        private readonly string jsonPath;
 
-        var viewModel = new HomeViewModel { Filmes = filmes };
-        return View(viewModel);
+        public HomeController(IWebHostEnvironment env)
+        {
+            jsonPath = Path.Combine(env.WebRootPath, "data", "filmes.json");
+        }
 
+        public IActionResult Index()
+        {
+            var filmes = CarregarFilmes();
+            var viewModel = new HomeViewModel { Filmes = filmes };
+            return View(viewModel);
+        }
+
+        public IActionResult Detalhes(int? id)
+        {
+            if (id == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            var filmes = CarregarFilmes();
+            var filmeSelecionado = filmes.FirstOrDefault(f => f.Id == id);
+
+            if (filmeSelecionado == null)
+            {
+                return NotFound("Filme não encontrado.");
+            }
+
+            return View(filmeSelecionado);
+        }
+
+        private List<Filme> CarregarFilmes()
+        {
+            if (!System.IO.File.Exists(jsonPath))
+            {
+                return new List<Filme>();
+            }
+
+            var json = System.IO.File.ReadAllText(jsonPath);
+            return JsonConvert.DeserializeObject<List<Filme>>(json) ?? new List<Filme>();
+        }
     }
 }
-
-
-
-

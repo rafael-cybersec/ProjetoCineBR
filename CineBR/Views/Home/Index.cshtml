@@ -2,12 +2,17 @@
 
 <main>
     <section class="movies-list">
-        <h1>Catálogo de Filmes</h1>
+        <h1>Filmes Nacionais</h1>
         <div id="movies-grid" class="movies-grid">
-            <!-- Os cards dos filmes serão gerados aqui -->
+            @foreach (var filme in Model.Filmes)
+            {
+                <div class="movie-card">
+                    <a href="/filme/detalhes/@filme.Id">
+                        <img src="@filme.Capa" alt="@filme.Titulo">
+                        <h3>@filme.Titulo</h3>
+                    </a>
+                </div>
+            }
         </div>
     </section>
 </main>
-
-<script src="js/catalogo.js"></script>
-

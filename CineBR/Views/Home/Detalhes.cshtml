@@ -1,32 +1,116 @@
-﻿@model CineBR.Models.HomeViewModel
+﻿@model CineBR.Models.Filme
 
-@using Microsoft.AspNetCore.Http;
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-@{
-    var idFilmeStr = Context.Request.Query["id"];
-    int.TryParse(idFilmeStr, out int idFilme);
-    var filmeSelecionado = Model.Filmes.FirstOrDefault(f => f.Id == idFilme);
-}
+<link rel="stylesheet" href="/css/detalhes.css">
 
 <main>
-    @if (filmeSelecionado != null)
-    {
-        <section class="movie-details">
-            <h1>@filmeSelecionado.Titulo</h1>
-            <div class="details-wrapper">
-                <img src="@filmeSelecionado.Capa" alt="@filmeSelecionado.Titulo">
-                <div class="details-content">
-                    <p><strong>Resumo:</strong> @filmeSelecionado.Resumo</p>
-                    <p><strong>Diretor:</strong> @filmeSelecionado.Diretor</p>
-                    <p><strong>Elenco:</strong> @string.Join(", ", filmeSelecionado.Elenco)</p>
-                    <p><strong>Duração:</strong> @filmeSelecionado.Duracao minutos</p>
-                    <p><strong>Gênero:</strong> @string.Join(", ", filmeSelecionado.Genero)</p>
+
+
+    <section class="movie-details">
+
+        <div class="movie-title">       
+            <h1 class="movie-title">@Model.Titulo</h1>
+        </div>
+
+
+        <div class="details-grid">
+
+
+            <!-- Coluna da esquerda -->
+            <div class="left-column">
+                <img class="movie-cover" src="~/@Model.Capa" alt="@Model.Titulo">
+                <div class="movie-info">
+                    <p><strong>Gênero:</strong> @string.Join(", ", Model.Genero)</p>
+                    <p><strong>Duração:</strong> @Model.Duracao minutos</p>
+                    <p><strong>Ano de Lançamento:</strong> @Model.releasedate</p>
                 </div>
             </div>
-        </section>
-    }
-    else
-    {
-        <p>Filme não encontrado.</p>
-    }
+
+            <!-- Coluna central -->
+            <div class="center-column">
+                <div class="trailer">
+                    <h2>Trailer Oficial</h2>
+                    @if (!string.IsNullOrEmpty(Model.trailerlink))
+                    {
+                        var embedLink = Model.trailerlink.Replace("watch?v=", "embed/");
+
+                        <iframe 
+                                height="315"
+                                src="@embedLink"
+                                title="Trailer do Filme @Model.Titulo"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                        </iframe>
+                    }
+                    else
+                    {
+                        <p>Trailer não disponível.</p>
+                    }
+                </div>
+            </div>
+
+            <!-- Coluna da direita -->
+            <div class="right-column">
+                <div class="sinopse">
+                    <h2>Sinopse</h2>
+                    <p>@Model.Resumo</p>
+
+                </div>
+
+
+
+                <p1><strong>Diretor:</strong></p1>
+                <div class="diretor">
+                    @if (Model.Diretor != null && Model.Diretor.Any())
+                    {
+                       foreach (var exibirdiretor in Model.Diretor)
+                       {
+                            <span class="diretor">@exibirdiretor</span>
+                       }
+
+                    }
+                    else
+                    {
+                        <p>Nenhum diretor disponível.</p>
+                    }
+                </div>
+
+
+
+
+                <p1><strong>Elenco:</strong></p1>
+                <div class="elenco">
+                    @if (Model.Elenco != null && Model.Elenco.Any())
+                    {
+                        foreach (var ator in Model.Elenco)
+                        {
+                            <span class="ator">@ator</span>
+                        }
+                    }
+                    else
+                    {
+                        <p>Nenhum ator disponível.</p>
+                    }
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Seção de comentários 
+        <div class="comments-section">
+            <h2>Comentários</h2>
+            <form class="comment-form">
+                <textarea name="comentario" placeholder="Escreva seu comentário..." rows="4"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="comment-list">
+
+
+            </div>
+        </div>
+        -->
+    </section>
 </main>

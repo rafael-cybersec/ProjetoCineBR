@@ -1,4 +1,4 @@
-﻿// Carrega o JSON e renderiza os filmes
+﻿// Carrega o JSON e renderiza os detalhes dos filmes
 async function carregarFilmes() {
     try {
         const response = await fetch('data/filmes.json');
