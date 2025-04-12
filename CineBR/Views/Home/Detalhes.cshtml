@@ -1,27 +1,25 @@
 ﻿@model CineBR.Models.Filme
 
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+@{
+    Layout = User.IsInRole("Admin") ? "~/Views/Shared/_LayoutAdmin.cshtml" : "~/Views/Shared/_Layout.cshtml";
+}
 
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <link rel="stylesheet" href="/css/detalhes.css">
 
 <main>
-
-
     <section class="movie-details">
-
-        <div class="movie-title">       
+        <div class="movie-title">
             <h1 class="movie-title">@Model.Titulo</h1>
         </div>
 
-
         <div class="details-grid">
-
 
             <!-- Coluna da esquerda -->
             <div class="left-column">
-                <img class="movie-cover" src="~/@Model.Capa" alt="@Model.Titulo">
+                <img class="movie-cover" src="@Model.Capa" alt="@Model.Titulo">
                 <div class="movie-info">
-                    <p><strong>Gênero:</strong> @string.Join(", ", Model.Genero)</p>
+                    <p><strong>Gênero:</strong> @string.Join(" | ", Model.Genero)</p>
                     <p><strong>Duração:</strong> @Model.Duracao minutos</p>
                     <p><strong>Ano de Lançamento:</strong> @Model.releasedate</p>
                 </div>
@@ -34,9 +32,7 @@
                     @if (!string.IsNullOrEmpty(Model.trailerlink))
                     {
                         var embedLink = Model.trailerlink.Replace("watch?v=", "embed/");
-
-                        <iframe 
-                                height="315"
+                        <iframe height="315"
                                 src="@embedLink"
                                 title="Trailer do Filme @Model.Titulo"
                                 frameborder="0"
@@ -56,20 +52,16 @@
                 <div class="sinopse">
                     <h2>Sinopse</h2>
                     <p>@Model.Resumo</p>
-
                 </div>
 
-
-
-                <p1><strong>Diretor:</strong></p1>
+                <p><strong>Diretor:</strong></p>
                 <div class="diretor">
                     @if (Model.Diretor != null && Model.Diretor.Any())
                     {
-                       foreach (var exibirdiretor in Model.Diretor)
-                       {
+                        foreach (var exibirdiretor in Model.Diretor)
+                        {
                             <span class="diretor">@exibirdiretor</span>
-                       }
-
+                        }
                     }
                     else
                     {
@@ -77,10 +69,7 @@
                     }
                 </div>
 
-
-
-
-                <p1><strong>Elenco:</strong></p1>
+                <p><strong>Elenco:</strong></p>
                 <div class="elenco">
                     @if (Model.Elenco != null && Model.Elenco.Any())
                     {
@@ -94,22 +83,18 @@
                         <p>Nenhum ator disponível.</p>
                     }
                 </div>
-
             </div>
-
         </div>
 
-        <!-- Seção de comentários 
+        <!-- Seção de comentários futura -->
+        <!--
         <div class="comments-section">
             <h2>Comentários</h2>
             <form class="comment-form">
                 <textarea name="comentario" placeholder="Escreva seu comentário..." rows="4"></textarea>
                 <button type="submit">Enviar</button>
             </form>
-            <div class="comment-list">
-
-
-            </div>
+            <div class="comment-list"></div>
         </div>
         -->
     </section>

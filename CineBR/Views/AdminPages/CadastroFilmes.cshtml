@@ -1,0 +1,139 @@
+﻿@model CineBR.Models.Filme
+
+@{
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@{
+    ViewData["Title"] = "Cadastro de Filmes";
+}
+
+
+<h2>Cadastro de Filmes</h2>
+
+@if (ViewBag.Mensagem != null)
+{
+    <div class="alert alert-success">@ViewBag.Mensagem</div>
+}
+
+<link rel="stylesheet" href="~/css/cadastro-filmes.css" />
+
+<!-- Tagify Autocomplete -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@@yaireo/tagify/dist/tagify.css" />
+<script src="https://cdn.jsdelivr.net/npm/@@yaireo/tagify"></script>
+
+<!-- Scripts separados -->
+<script src="~/js/diretor-elenco.js"></script>
+<script src="~/js/categoria.js"></script>
+
+
+<form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="Titulo">Título:</label>
+        <input type="text" class="form-control" id="Titulo" name="Titulo" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Resumo">Resumo:</label>
+        <textarea class="form-control" id="Resumo" name="Resumo" rows="3" required></textarea>
+    </div>
+
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div class="form-group" style="flex: 1;">
+            <label for="DiretorLista">Diretores:</label>
+            <input type="text" id="DiretorLista" name="DiretorLista" />
+        </div>
+
+        <div class="form-group" style="flex: 1;">
+            <label for="ElencoLista">Elenco:</label>
+            <input type="text" id="ElencoLista" name="ElencoLista" />
+        </div>
+    </div>
+
+    <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+        <div class="form-group" style="flex: 1;">
+            <label for="Duracao">Duração (em minutos):</label>
+            <input type="number" class="form-control" id="Duracao" name="Duracao" required />
+        </div>
+
+        <div class="form-group" style="flex: 1;">
+            <label for="releasedate">Data de Lançamento:</label>
+            <input type="date" class="form-control" id="releasedate" name="releasedate" />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="categoriaSelect">Categorias:</label>
+        <div style="display: flex; gap: 10px;">
+            <select id="categoriaSelect" class="form-control">
+                <option disabled selected>Selecione uma categoria</option>
+                <option>Ação</option>
+                <option>Comédia</option>
+                <option>Drama</option>
+                <option>Terror</option>
+                <option>Romance</option>
+                <option>Documentário</option>
+                <option>Suspense</option>
+                <option>Ficção Científica</option>
+                <option>Fantasia</option>
+                <option>Animação</option>
+                <option>Aventura</option>
+                <option>Musical</option>
+            </select>
+            <button type="button" onclick="adicionarCategoria()" class="btn btn-success">+</button>
+        </div>
+
+        <div id="categoriasSelecionadas" style="margin-top:10px;"></div>
+        <input type="hidden" id="GeneroLista" name="GeneroLista" />
+    </div>
+
+    <div class="form-group">
+        <label for="capaUpload">Imagem da Capa:</label>
+        <input type="file" class="form-control" id="capaUpload" name="capaUpload" accept="image/*" onchange="previewCapa()" />
+        <div style="margin-top:10px;">
+            <img id="previewImagem" src="#" alt="Pré-visualização" style="max-width: 200px; display: none; border: 1px solid #ccc; padding: 5px;" />
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        <label for="trailerlink">Link do Trailer:</label>
+        <input type="text" class="form-control" id="trailerlink" name="trailerlink" />
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" id="Ativo" name="Ativo" checked />
+        <label for="Ativo">Ativo</label>
+    </div>
+
+    <div class="form-group">
+        <input type="checkbox" id="ExibirNoSite" name="ExibirNoSite" checked />
+        <label for="ExibirNoSite">Exibir no site</label>
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Cadastrar Filme</button>
+</form>
+
+
+
+<script>
+    function previewCapa() {
+        const input = document.getElementById('capaUpload');
+        const preview = document.getElementById('previewImagem');
+
+        if (input.files && input.files[0]) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                preview.src = e.target.result;
+                preview.style.display = 'block';
+            };
+
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            preview.src = "#";
+            preview.style.display = "none";
+        }
+    }
+</script>

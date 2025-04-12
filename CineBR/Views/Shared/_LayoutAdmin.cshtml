@@ -1,0 +1,59 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - CineBR</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/admin.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="/" class="logo admin-logo">Painel<span>Admin</span></a>
+
+            <!-- Barra de Pesquisa -->
+            <div class="search-box">
+                <input type="search" id="search-input" placeholder="Pesquisar .">
+                <i class='bx bx-search'></i>
+            </div>
+
+            <!-- Boas-vindas -->
+            <div class="admin-welcome">
+                <p>@User.Identity.Name</p>
+            </div>
+        </div>
+
+        <!-- Navegação abaixo da barra de pesquisa -->
+        <nav class="admin-navbar">
+            <a href="#" class="nav-link"><i class='bx bx-home'></i><span>Início</span></a>
+            <a href="#" class="nav-link"><i class='bx bx-group'></i><span>Usuários</span></a>
+            <a href="/AdminPages/CadastroFilmes" class="nav-link"><i class='bx bx-add-to-queue'></i><span>Adicionar Filme</span></a>
+            <a href="/AdminPages/DashboardFilmes" class="nav-link"><i class='bx bxs-dashboard'></i><span>Dashboard Filmes</span></a>
+
+            <a href="/Usuario/Logout" class="nav-link"><i class='bx bx-log-out'></i><span>Logout</span></a>
+        </nav>
+    </header>
+
+    <main class="admin-main">
+        @RenderBody()
+    </main>
+
+    <footer class="footer admin-footer">
+        <p>&copy; 2025 CineBR - Administração</p>
+    </footer>
+
+    <script src="/js/swiper-bundle.min.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

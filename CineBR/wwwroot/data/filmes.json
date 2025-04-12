@@ -13,37 +13,13 @@
   },
   {
     "id": 2,
-    "titulo": "Menino Maluquinho",
+    "titulo": "Menino Maluquinho - O Filme",
     "resumo": "Menino Maluquinho, baseado na obra de Ziraldo, conta as aventuras de um garoto alegre e cheio de imaginação, lidando com questões da infância e família.",
     "diretor": [ "Helvécio Ratton" ],
     "elenco": [ "Samuel Costa", "Patrícia Pillar", "Roberto Bomtempo", "Othon Bastos", "Tonico Pereira" ],
     "duracao": 82,
     "genero": [ "Comédia", "Família" ],
-    "capa": "image/filme-01.jpg",
-    "releasedate": 1995,
-    "trailerlink": "https://www.youtube.com/watch?v=3U-f4eHqcvw"
-  },
-  {
-    "id": 3,
-    "titulo": "Menino Maluquinho",
-    "resumo": "Menino Maluquinho, baseado na obra de Ziraldo, conta as aventuras de um garoto alegre e cheio de imaginação, lidando com questões da infância e família.",
-    "diretor": [ "Helvécio Ratton" ],
-    "elenco": [ "Samuel Costa", "Patrícia Pillar", "Roberto Bomtempo", "Othon Bastos", "Tonico Pereira" ],
-    "duracao": 82,
-    "genero": [ "Comédia", "Família" ],
-    "capa": "image/filme-02.jpg",
-    "releasedate": 1995,
-    "trailerlink": "https://www.youtube.com/watch?v=3U-f4eHqcvw"
-  },
-  {
-    "id": 4,
-    "titulo": "Menino Maluquinho",
-    "resumo": "Menino Maluquinho, baseado na obra de Ziraldo, conta as aventuras de um garoto alegre e cheio de imaginação, lidando com questões da infância e família.",
-    "diretor": [ "Helvécio Ratton" ],
-    "elenco": [ "Samuel Costa", "Patrícia Pillar", "Roberto Bomtempo", "Othon Bastos", "Tonico Pereira" ],
-    "duracao": 82,
-    "genero": [ "Comédia", "Família" ],
-    "capa": "image/filme-03.jpg",
+    "capa": "image/filme-20.jpg",
     "releasedate": 1995,
     "trailerlink": "https://www.youtube.com/watch?v=3U-f4eHqcvw"
   }

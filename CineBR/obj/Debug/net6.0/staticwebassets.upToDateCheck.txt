@@ -1,3 +1,5 @@
+wwwroot\css\admin.css
+wwwroot\css\cadastro-filmes.css
 wwwroot\css\cadastro-login.css
 wwwroot\css\detalhes.css
 wwwroot\css\layout.css
@@ -28,6 +30,8 @@ wwwroot\image\filme-20.jpg
 wwwroot\image\menino-maluquinho.jpg
 wwwroot\image\user.png
 wwwroot\js\catalogo.js
+wwwroot\js\categoria.js
+wwwroot\js\diretor-elenco.js
 wwwroot\js\main.js
 wwwroot\js\site.js
 wwwroot\js\swiper-bundle.min.js

@@ -38,11 +38,13 @@ namespace CineBR.Controllers
                 return View("CadastroLogin");
             }
 
-            usuario.Id = Guid.NewGuid().ToString();  // Garantindo um ID único para o usuário
+            usuario.Id = Guid.NewGuid().ToString();
             usuario.Tipo = "Usuario";
             usuarios.Add(usuario);
             UsuarioService.SalvarUsuarios(usuarios, _jsonFile);
 
+            // Mensagem de sucesso via TempData
+            TempData["MensagemCadastroSucesso"] = "Usuário cadastrado com sucesso!";
             return RedirectToAction("CadastroLogin");
         }
 
@@ -55,6 +57,7 @@ namespace CineBR.Controllers
             if (usuario == null)
             {
                 ViewBag.MensagemLoginErro = "Email ou senha incorretos.";
+                ViewBag.AbaAtiva = "login"; // <- isso aqui é o segredo
                 return View("CadastroLogin");
             }
 
@@ -71,6 +74,7 @@ namespace CineBR.Controllers
 
             return Redirect("/");
         }
+
 
 
 

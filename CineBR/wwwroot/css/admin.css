@@ -1,0 +1,95 @@
+﻿.admin-header {
+    background-color: #111;
+    color: #fff;
+    padding-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.admin-logo {
+    font-weight: bold;
+    font-size: 24px;
+    color: #3936f4;
+    text-decoration: none;
+}
+
+    .admin-logo span {
+        color: #fff;
+    }
+
+/* Barra de Pesquisa Admin */
+.admin-search {
+    margin-left: 0px;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 8px 15px;
+    background: #222;
+    border-radius: 2rem;
+    max-width: 400px;
+    flex: 1;
+}
+
+    .admin-search input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: #fff;
+        width: 100%;
+    }
+
+    .admin-search .bx {
+        color: #ccc;
+        cursor: pointer;
+    }
+
+.admin-welcome {
+    margin-left: auto;
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+/* Navegação com ícones (abaixo da pesquisa) */
+.admin-navbar {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 12px 0;
+    background-color: #1a1a1a;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+    .admin-navbar .nav-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #aaa;
+        font-size: 0.7rem;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .admin-navbar .nav-link i {
+            font-size: 0.8rem;
+            margin-bottom: 1px;
+        }
+
+        .admin-navbar .nav-link:hover {
+            color: #fff;
+            transform: scale(1.05);
+        }
+
+/* Conteúdo principal */
+.admin-main {
+    padding: 20px;
+    background-color: #1a1a1a;
+    min-height: 80vh;
+}
+
+/* Rodapé */
+.admin-footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}

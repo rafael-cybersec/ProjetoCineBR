@@ -1,100 +1,110 @@
-﻿/* Estilos Gerais */
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #1e1e2a; /* Fundo escuro */
-    color: #fcfeff; /* Texto claro */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+﻿/* Container principal */
+.auth-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    background-color: var(--container-color); /* Cor do seu site */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.container {
-    background-color: #2d2e37; /* Fundo do container */
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+/* Estilos das abas (Cadastrar / Entrar) */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+    .tabs button {
+        width: 48%;
+        padding: 10px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: #2d2e37; /* Cor escura */
+        border: 1px solid #444; /* Borda ajustada */
+        border-radius: 5px;
+        color: var(--text-color); /* Cor do texto */
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+        /* Efeito de hover nos botões */
+        .tabs button:hover {
+            background-color: var(--main-color); /* Cor ao passar o mouse */
+            color: var(--text-color); /* Cor do texto */
+        }
+
+/* Aba ativa (botão selecionado) */
+.tab-btn.ativo {
+    border-bottom: 3px solid #ffffff; /* Marcação da aba ativa */
+    font-weight: bold;
+    background-color: #3a3b45; /* Destaque na aba ativa */
+}
+
+/* Estilo para os formulários (Cadastro / Login) */
+.auth-form {
+    display: none;
+    padding: 20px;
+    background-color: var(--container-color); /* Fundo */
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Exibição de mensagens de erro */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Formulários (inputs e botões) */
+.auth-form input,
+.auth-form button {
     width: 100%;
-    max-width: 400px;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #444;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #2d2e37; /* Cor de fundo */
+    color: var(--text-color);
+}
+
+    /* Ajuste do foco nos campos */
+    .auth-form input:focus,
+    .auth-form button:focus {
+        border-color: var(--main-color);
+        outline: none;
+    }
+
+/* Botão de envio do formulário */
+.auth-form button {
+    background-color: var(--main-color);
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+    .auth-form button:hover {
+        background-color: var(--hover-color);
+    }
+
+/* Exibição inicial do formulário correto */
+#formCadastro {
+    display: block;
+}
+
+#formLogin {
+    display: none;
+}
+
+/* Título centralizado */
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
     text-align: center;
 }
-
-h2 {
-    color: #009714; /* Verde para o título */
-    margin-bottom: 1.5rem;
-    font-size: 1.5rem;
-}
-
-/* Formulário */
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-    form div {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-label {
-    font-size: 0.9rem;
-    color: #b7b7b7; /* Texto cinza claro */
-    text-align: left;
-}
-
-input {
-    padding: 0.75rem;
-    border: 1px solid #444; /* Borda cinza escuro */
-    border-radius: 4px;
-    background-color: #33343f; /* Fundo do input */
-    color: #fcfeff; /* Texto claro */
-    font-size: 0.9rem;
-    outline: none;
-}
-
-    input:focus {
-        border-color: #009714; /* Borda verde ao focar */
-    }
-
-button {
-    padding: 0.75rem;
-    background-color: #009714; /* Verde para o botão */
-    color: #fcfeff; /* Texto claro */
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-    button:hover {
-        background-color: #007a0f; /* Verde mais escuro ao passar o mouse */
-    }
-
-/* Mensagem de Erro */
-.mensagem-erro {
-    color: #ff4d4d; /* Vermelho para mensagens de erro */
-    font-size: 0.9rem;
-    margin-top: 1rem;
-}
-
-/* Link para Alternar entre Cadastro e Login */
-.alternar-acao {
-    margin-top: 1rem;
-    font-size: 0.9rem;
-    color: #b7b7b7; /* Texto cinza claro */
-}
-
-    .alternar-acao a {
-        color: #009714; /* Verde para o link */
-        text-decoration: none;
-        font-weight: 500;
-    }
-
-        .alternar-acao a:hover {
-            text-decoration: underline;
-        }

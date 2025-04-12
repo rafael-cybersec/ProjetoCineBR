@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\CineBR.vvypdmdjd4.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\css\\admin.css",
+      "PackagePath": "staticwebassets\\css\\admin.css"
+    },
+    {
+      "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\css\\cadastro-filmes.css",
+      "PackagePath": "staticwebassets\\css\\cadastro-filmes.css"
+    },
+    {
       "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\css\\cadastro-login.css",
       "PackagePath": "staticwebassets\\css\\cadastro-login.css"
     },
@@ -123,6 +131,14 @@
     {
       "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\js\\catalogo.js",
       "PackagePath": "staticwebassets\\js\\catalogo.js"
+    },
+    {
+      "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\js\\categoria.js",
+      "PackagePath": "staticwebassets\\js\\categoria.js"
+    },
+    {
+      "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\js\\diretor-elenco.js",
+      "PackagePath": "staticwebassets\\js\\diretor-elenco.js"
     },
     {
       "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\js\\main.js",

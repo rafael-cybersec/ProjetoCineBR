@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CineBR")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eeeb6472cda3ca7d591188d7eadb3c628597be50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7d58c8e4e494c9a5dbf1366d0064a34bf0dca94")]
 [assembly: System.Reflection.AssemblyProductAttribute("CineBR")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CineBR")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -20,9 +20,9 @@ namespace CineBR.Controllers
             return View(viewModel);
         }
 
-        public IActionResult Detalhes(int? id)
+        public IActionResult Detalhes(string id)
         {
-            if (id == null)
+            if (string.IsNullOrEmpty(id))
             {
                 return RedirectToAction("Index");
             }

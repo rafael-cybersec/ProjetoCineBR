@@ -4,83 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CineBR</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/style.css">
 
-    <!-- Link Swiper CSS -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/layout.css" />
+
+    <!-- Swiper CSS -->
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+
     <!-- Fav Icon -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
     <!-- Box Icons -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
     <header>
-        <!-- Nav -->
         <div class="nav container">
             <!-- Logo -->
-            <a href="/" class="logo">
-                Cine<span>Br</span>
-            </a>
-            <!-- Search Box -->
+            <a href="/" class="logo">Cine<span>Br</span></a>
+
+            <!-- Barra de Pesquisa -->
             <div class="search-box">
                 <input type="search" id="search-input" placeholder="Pesquisar Filme">
                 <i class='bx bx-search'></i>
             </div>
 
-            <!-- Botões Cadastro/Login ou Logout -->
+            <!-- Autenticação -->
             <div class="auth-buttons">
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <p>Bem-vindo, @User.Identity.Name!</p>
-                    <a href="/Usuario/Logout" class="btn-logout">
-                        <i class='bx bx-log-out'></i>
-                    </a>
+                    <p style="margin-right: 10px;">Bem-vindo, @User.Identity.Name!</p>
+                    <a href="/Usuario/Logout" class="btn-logout" title="Sair"><i class='bx bx-log-out'></i></a>
                 }
                 else
                 {
-                    <a href="/Usuario/CadastroLogin" class="btn-auth">
-                        <i class='bx bx-user-plus'></i>
-                    </a>
+                    <a href="/Usuario/CadastroLogin" class="btn-auth" title="Entrar ou Cadastrar"><i class='bx bx-user-plus'></i></a>
                 }
             </div>
-
-
-            <!-- NavBar -->
-            <div class="navbar">
-                <a href="/" class="nav-link nav-active">
-                    <i class='bx bx-home'></i>
-                    <span class="nav-link-title">Início</span>
-                </a>
-                <a href="/Home/EmAlta" class="nav-link">
-                    <i class='bx bxs-hot'></i>
-                    <span class="nav-link-title">Em Alta</span>
-                </a>
-                <a href="/Home/Filmes" class="nav-link">
-                    <i class='bx bx-tv'></i>
-                    <span class="nav-link-title">Filmes</span>
-                </a>
-                <a href="/Home/Favoritos" class="nav-link">
-                    <i class='bx bx-heart'></i>
-                    <span class="nav-link-title">Favoritos</span>
-                </a>
-            </div>
         </div>
+
+        <!-- NAVBAR (fora do .nav.container!) -->
+        <nav class="user-navbar">
+            <a href="/" class="nav-link nav-active"><i class='bx bx-home'></i><span>Início</span></a>
+            <a href="/Home/EmAlta" class="nav-link"><i class='bx bxs-hot'></i><span>Em Alta</span></a>
+            <a href="/Home/Filmes" class="nav-link"><i class='bx bx-tv'></i><span>Filmes</span></a>
+            <a href="/Home/Favoritos" class="nav-link"><i class='bx bx-heart'></i><span>Favoritos</span></a>
+        </nav>
     </header>
 
-    <!-- Main Content -->
-    <main>
+
+    <!-- Conteúdo Principal -->
+    <main style="padding-top: 140px;" class="container">
         @RenderBody()
     </main>
 
-    <!-- Footer -->
+    <!-- Rodapé -->
     <footer class="footer">
-        <div class="copyright">
-            <p>&copy; 2024 CineBR - Todos os direitos reservados.</p>
-        </div>
-
-
+        <p>&copy; 2025 CineBR</p>
     </footer>
 
     <!-- Scripts -->

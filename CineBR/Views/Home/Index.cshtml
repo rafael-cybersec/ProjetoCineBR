@@ -1,5 +1,9 @@
 ﻿@model CineBR.Models.HomeViewModel
 
+@{
+    Layout = User.IsInRole("Admin") ? "~/Views/Shared/_LayoutAdmin.cshtml" : "~/Views/Shared/_Layout.cshtml";
+}
+
 <main>
     <section class="movies-list">
         <h1>Filmes Nacionais</h1>
