@@ -2,8 +2,8 @@
   {
     "Id": "0d3cb498-2548-448a-96e5-2e300b476d43",
     "Nome": "Master",
-    "Email": "rafaelsar.ctos@gmail.com",
-    "Senha": "QWERT@YUIOP",
+    "Email": "cinebr@gmail.com",
+    "Senha": "123456",
     "Tipo": "Admin"
   },
   {
@@ -17,6 +17,20 @@
     "Id": "7c0b7083-e6b1-47e7-85ed-ede0c4c24628",
     "Nome": "usuario2",
     "Email": "usuario2@gmail.com",
+    "Senha": "123456",
+    "Tipo": "Usuario"
+  },
+  {
+    "Id": "4d4525c5-da3f-4064-b520-59b33f088a4b",
+    "Nome": "usuario3",
+    "Email": "usuario3@gmail.com",
+    "Senha": "123456",
+    "Tipo": "Usuario"
+  },
+  {
+    "Id": "0cddcb31-c5c2-47b1-a41e-2049d034bb34",
+    "Nome": "usuario10",
+    "Email": "usuario10@gmail.com",
     "Senha": "123456",
     "Tipo": "Usuario"
   }

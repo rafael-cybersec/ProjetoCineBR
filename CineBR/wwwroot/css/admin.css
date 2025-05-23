@@ -1,95 +1,323 @@
-﻿.admin-header {
-    background-color: #111;
-    color: #fff;
+﻿/* ============================================= */
+/* LAYOUT ADMIN */
+/* ============================================= */
+
+/* Header Admin */
+.admin-header {
+    background-color: var(--container-color);
+    color: var(--text-color);
     padding-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 .admin-logo {
     font-weight: bold;
-    font-size: 24px;
-    color: #3936f4;
+    font-size: 1.5rem;
+    color: blue;
     text-decoration: none;
 }
 
-    .admin-logo span {
-        color: #fff;
-    }
+.admin-logo span {
+    color: var(--text-color);
+}
 
 /* Barra de Pesquisa Admin */
 .admin-search {
-    margin-left: 0px;
     display: flex;
     align-items: center;
     gap: 0.7rem;
     padding: 8px 15px;
-    background: #222;
+    background: var(--surface);
     border-radius: 2rem;
     max-width: 400px;
     flex: 1;
 }
 
-    .admin-search input {
-        background: transparent;
-        border: none;
-        outline: none;
-        color: #fff;
-        width: 100%;
-    }
+.admin-search input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    width: 100%;
+}
 
-    .admin-search .bx {
-        color: #ccc;
-        cursor: pointer;
-    }
+.admin-search .bx {
+    color: var(--text-secondary);
+    cursor: pointer;
+}
 
+/* Saudação */
 .admin-welcome {
     margin-left: auto;
     font-size: 0.9rem;
-    color: #ddd;
+    color: var(--text-secondary);
 }
 
-/* Navegação com ícones (abaixo da pesquisa) */
+/* Navegação Admin */
 .admin-navbar {
     display: flex;
     justify-content: center;
     gap: 40px;
     padding: 12px 0;
-    background-color: #1a1a1a;
+    background-color: var(--container-color);
     border-top: 1px solid rgba(255,255,255,0.1);
     border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-    .admin-navbar .nav-link {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #aaa;
-        font-size: 0.7rem;
-        text-decoration: none;
-        transition: 0.3s;
-    }
+.admin-navbar .nav-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-secondary);
+    font-size: 0.7rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
 
-        .admin-navbar .nav-link i {
-            font-size: 0.8rem;
-            margin-bottom: 1px;
-        }
+.admin-navbar .nav-link i {
+    font-size: 0.8rem;
+    margin-bottom: 1px;
+}
 
-        .admin-navbar .nav-link:hover {
-            color: #fff;
-            transform: scale(1.05);
-        }
+.admin-navbar .nav-link:hover,
+.admin-navbar .nav-link.nav-active {
+    color: var(--text-color);
+    transform: scale(1.05);
+}
 
-/* Conteúdo principal */
+/* Conteúdo Principal Admin */
 .admin-main {
     padding: 20px;
-    background-color: #1a1a1a;
+    background-color: var(--container-color);
     min-height: 80vh;
 }
 
-/* Rodapé */
+/* Rodapé Admin */
 .admin-footer {
-    background-color: #111;
-    color: #fff;
+    background-color: var(--container-color);
+    color: var(--text-color);
     text-align: center;
     padding: 10px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ============================================= */
+/* FORMULÁRIOS ADMIN */
+/* ============================================= */
+
+/* Formulário de Cadastro de Filmes */
+.admin-form {
+    background-color: var(--surface);
+    max-width: 90%;
+    margin: 110px auto 30px;
+    margin-top: 300px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-form h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 600;
+    color: var(--primary-light);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.admin-form input[type="text"],
+.admin-form input[type="email"],
+.admin-form input[type="number"],
+.admin-form input[type="file"],
+.admin-form input[type="date"],
+.admin-form textarea,
+.admin-form select {
+    width: 100%;
+    padding: 10px 12px;
+    background-color: var(--background) !important;
+    color: var(--text-color) !important;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus,
+.admin-form select:focus {
+    border-color: var(--primary-light);
+    outline: none;
+    background-color: var(--background);
+    color: var(--text-color);
+}
+
+.admin-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Classificação Indicativa */
+.classificacao-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.classificacao-opcao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.classificacao-opcao input {
+    display: none;
+}
+
+.classificacao-opcao img {
+    width: 60px;
+    height: auto;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    transition: border 0.3s;
+}
+
+.classificacao-opcao input:checked + img {
+    border: 2px solid var(--primary);
+}
+
+.classificacao-detalhe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Badges e Alertas */
+.badge {
+    background-color: var(--primary-dark);
+    color: white;
+    border-radius: 20px;
+    padding: 6px 12px;
+    display: inline-flex;
+    align-items: center;
+    margin: 5px 8px 0 0;
+    font-size: 13px;
+}
+
+.badge button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    margin-left: 6px;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.alert {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    background-color: var(--success);
+    color: white;
+}
+
+/* Preview de Imagem */
+#previewImagem {
+    max-width: 200px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-top: 10px;
+    display: none;
+}
+
+/* ============================================= */
+/* COMPONENTES ADMIN */
+/* ============================================= */
+
+/* Cartões Admin */
+.card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+}
+
+/* Botões Admin */
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #2e7d32;
+}
+
+/* ============================================= */
+/* RESPONSIVIDADE ADMIN */
+/* ============================================= */
+
+@media (max-width: 992px) {
+    .admin-form {
+        margin: 110px auto 30px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .admin-navbar {
+        gap: 20px;
+        padding: 10px 0;
+    }
+    
+    .admin-form {
+        margin-top: 90px;
+    }
+    
+    .classificacao-container {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .admin-form {
+        margin-top: 80px;
+        padding: 15px;
+    }
+    
+    .admin-navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 8px 0;
+    }
 }

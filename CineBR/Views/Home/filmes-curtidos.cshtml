@@ -1,0 +1,41 @@
+﻿@model List<CineBR.Models.Filme>
+@{
+    Layout = User.IsInRole("Admin") ? "~/Views/Shared/_LayoutAdmin.cshtml" : "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <h1 class="my-4">Filmes que você curtiu</h1>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info">
+            Você ainda não curtiu nenhum filme.
+        </div>
+    }
+    else
+    {
+        <div class="row">
+            @foreach (var filme in Model)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="@filme.Capa" class="card-img-top" alt="@filme.Titulo">
+                        <div class="card-body">
+                            <h5 class="card-title">@filme.Titulo</h5>
+                            <p class="card-text">@filme.Resumo</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <small class="text-muted">@string.Join(", ", filme.Genero)</small>
+                                <small class="text-muted">@filme.Duracao min</small>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="@Url.Action("Detalhes", "Home", new { id = filme.Id })" class="btn btn-primary btn-sm">
+                                Ver detalhes
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+</div>

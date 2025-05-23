@@ -5,7 +5,17 @@
     "Breno Silveira", "Jorge Furtado", "Tata Amaral", "Luiz Fernando Carvalho",
     "Guel Arraes", "Ruy Guerra", "Neville D’Almeida", "Gabriel Mascaro",
     "Helvécio Ratton", "Marcelo Gomes", "Claudio Assis", "Sandra Kogut",
-    "Lucia Murat", "Selton Mello", "Monique Gardenberg", "Juliano Dornelles"
+    "Lucia Murat", "Selton Mello", "Monique Gardenberg", "Juliano Dornelles",
+    "Karim Aïnouz", "Petra Costa", "Affonso Uchoa", "Glauber Rocha",
+    "Eduardo Coutinho", "Arnaldo Jabor", "Hector Babenco", "Roberto Santos",
+    "João Moreira Salles", "Adirley Queirós", "André Novais Oliveira",
+    "Gabriel Martins", "Marília Rocha", "Ary Rosa", "Paulo César Saraceni",
+    "Leon Hirszman", "Carlos Diegues", "Tizuka Yamasaki", "Sérgio Bianchi",
+    "Júlio Bressane", "Andrea Tonacci", "Eduardo Escorel", "Suzana Amaral",
+    "Roberto Farias", "Daniela Thomas", "Fellipe Barbosa", "Marcos Prado",
+    "Eduardo Nunes", "Paulo Caldas", "Lírio Ferreira", "Sérgio Machado",
+    "Eduardo Valente", "Julia Rezende", "Esmir Filho", "Gustavo Pizzi",
+    "Aly Muritiba", "Lillah Halla", "Vladimir Carvalho", "Evaldo Mocarzel"
 ];
 
 const elencoSugestoes = [
@@ -19,7 +29,19 @@ const elencoSugestoes = [
     "Tainá Müller", "Maeve Jinkings", "Dira Paes", "João Miguel",
     "Sérgio Mamberti", "Taís Araújo", "Caio Blat", "Milhem Cortaz",
     "Johnny Massaro", "Clarisse Abujamra", "José de Abreu", "Lima Duarte",
-    "Zezé Motta", "Maurício Tizumba", "Otávio Müller", "Henri Castelli"
+    "Zezé Motta", "Maurício Tizumba", "Otávio Müller", "Henri Castelli",
+    "Mariana Ximenes", "Vera Fischer", "Antônio Fagundes", "Marcos Palmeira",
+    "Carolina Dieckmann", "Erom Cordeiro", "Fábio Assunção", "Vladimir Brichta",
+    "Sophie Charlotte", "Herson Capri", "Marcos Caruso", "Luís Melo",
+    "Edson Celulari", "Ailton Graça", "Thalita Carauta", "Silvio Guindane",
+    "Lee Taylor", "Nanda Costa", "Rosi Campos", "Gero Camilo",
+    "Jonathan Haagensen", "Leticia Colin", "Isio Ghelman", "Aline Moraes",
+    "Daniel de Oliveira", "Giovanna Antonelli", "Juliana Paes", "Humberto Martins",
+    "Marcos Veras", "Débora Bloch", "Emílio Orciollo Netto", "André Ramiro",
+    "Caco Ciocler", "Guilherme Weber", "César Troncoso", "Thiago Lacerda",
+    "Bruno Gagliasso", "Marcello Novaes", "Cleo Pires", "Maria Flor",
+    "Fiuk", "Sheron Menezzes", "Samya de Lavor", "Rafael Vitti",
+    "Gabriel Leone", "Isabela Torres", "Romulo Braga", "Valentina Herszage"
 ];
 
 // Ativação do Tagify para os campos
@@ -30,9 +52,9 @@ window.addEventListener("DOMContentLoaded", () => {
     if (diretorInput) {
         new Tagify(diretorInput, {
             whitelist: diretoresSugestoes,
-            maxTags: 5,
+            maxTags: 10,
             dropdown: {
-                maxItems: 15,
+                maxItems: 5,
                 enabled: 0,
                 closeOnSelect: false
             }
@@ -42,9 +64,9 @@ window.addEventListener("DOMContentLoaded", () => {
     if (elencoInput) {
         new Tagify(elencoInput, {
             whitelist: elencoSugestoes,
-            maxTags: 10,
+            maxTags: 30,
             dropdown: {
-                maxItems: 20,
+                maxItems: 5,
                 enabled: 0,
                 closeOnSelect: false
             }

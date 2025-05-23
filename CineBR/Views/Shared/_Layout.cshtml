@@ -1,72 +1,81 @@
-﻿<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineBR</title>
+﻿    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CineBR 🎬</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="~/css/style.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="~/css/style.css" />
-    <link rel="stylesheet" href="~/css/layout.css" />
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <!-- Fav Icon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <!-- Box Icons -->
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- Fav Icon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 
-    <!-- Box Icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-</head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="nav container">
-            <!-- Logo -->
-            <a href="/" class="logo">Cine<span>Br</span></a>
+
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div class="nav container">
+                <!-- Logo -->
+            <a href="/Home/Index" class="logo">Cine<span>BR🎬</span></a>
+
 
             <!-- Barra de Pesquisa -->
-            <div class="search-box">
-                <input type="search" id="search-input" placeholder="Pesquisar Filme">
-                <i class='bx bx-search'></i>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="search" id="search-input" placeholder="Pesquisar Filme..." autocomplete="off">
+                    <i class='bx bx-search'></i>
+                </div>
+                <!-- Dropdown de resultados -->
+                <div id="resultadosPesquisa" class="resultados-dropdown"></div>
             </div>
 
-            <!-- Autenticação -->
-            <div class="auth-buttons">
-                @if (User.Identity.IsAuthenticated)
-                {
-                    <p style="margin-right: 10px;">Bem-vindo, @User.Identity.Name!</p>
-                    <a href="/Usuario/Logout" class="btn-logout" title="Sair"><i class='bx bx-log-out'></i></a>
-                }
-                else
-                {
-                    <a href="/Usuario/CadastroLogin" class="btn-auth" title="Entrar ou Cadastrar"><i class='bx bx-user-plus'></i></a>
-                }
+                <!-- Autenticação -->
+                <div class="auth-buttons" style="display: flex; gap: 20px; flex-wrap: wrap;">
+                    <!-- Lógica de autenticação (Razor) -->
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <p style="margin-right: 10px;">Bem-vindo, @User.Identity.Name!</p>
+                        <a href="/Usuario/Logout" class="btn-logout" title="Sair"><i class='bx bx-log-out'></i></a>
+                    }
+                    else
+                    {
+                        <a href="/Usuario/CadastroLogin" class="btn-auth" title="Entrar ou Cadastrar"><i class='bx bx-user-plus'></i></a>
+                    }
+                </div>
             </div>
-        </div>
+            <!-- NAVBAR -->
+            <nav class="user-navbar">
+                <a href="/Home/Index" class="nav-link nav-active"><i class='bx bx-home'></i><span>Início</span></a>
+                <a href="/Home/Filmes" class="nav-link"><i class='bx bx-tv'></i><span>Categorias</span></a>
+                <a href="/Home/Favoritos" class="nav-link"><i class='bx bx-heart'></i><span>Curtidos</span></a>
+            </nav>
+        </header>
 
-        <!-- NAVBAR (fora do .nav.container!) -->
-        <nav class="user-navbar">
-            <a href="/" class="nav-link nav-active"><i class='bx bx-home'></i><span>Início</span></a>
-            <a href="/Home/EmAlta" class="nav-link"><i class='bx bxs-hot'></i><span>Em Alta</span></a>
-            <a href="/Home/Filmes" class="nav-link"><i class='bx bx-tv'></i><span>Filmes</span></a>
-            <a href="/Home/Favoritos" class="nav-link"><i class='bx bx-heart'></i><span>Favoritos</span></a>
-        </nav>
-    </header>
+        <!-- Conteúdo Principal -->
+        <main style="padding-top: 140px;" class="container">
+            @RenderBody()
+        </main>
 
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p>&copy; 2025 - CineBR</p>
+        </footer>   
 
-    <!-- Conteúdo Principal -->
-    <main style="padding-top: 140px;" class="container">
-        @RenderBody()
-    </main>
+        <!-- Scripts -->
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
-    <!-- Rodapé -->
-    <footer class="footer">
-        <p>&copy; 2025 CineBR</p>
-    </footer>
+        <script src="/js/search-box.js"></script>
+        <script src="/js/main.js"></script>
 
-    <!-- Scripts -->
-    <script src="/js/swiper-bundle.min.js"></script>
-    <script src="/js/main.js"></script>
-</body>
-</html>
+    </body>
+    </html>

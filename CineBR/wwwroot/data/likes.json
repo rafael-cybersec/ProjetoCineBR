@@ -1,0 +1,18 @@
+[
+  {
+    "IdLike": 1,
+    "IdFilme": 1,
+    "IdUsuario": "f8c9d204-2530-4ef6-8d4e-d2f092809269",
+    "DataCadastro": "2025-05-17T15:35:41.734031-03:00",
+    "Ativo": true,
+    "DataAtualizacao": "2025-05-21T18:14:50.0528971-03:00"
+  },
+  {
+    "IdLike": 2,
+    "IdFilme": 1,
+    "IdUsuario": "7c0b7083-e6b1-47e7-85ed-ede0c4c24628",
+    "DataCadastro": "2025-05-17T15:36:33.9780906-03:00",
+    "Ativo": true,
+    "DataAtualizacao": "2025-05-17T15:36:42.4560587-03:00"
+  }
+]

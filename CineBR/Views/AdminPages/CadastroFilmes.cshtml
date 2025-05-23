@@ -1,5 +1,6 @@
 ﻿@model CineBR.Models.Filme
 
+
 @{
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
@@ -7,14 +8,170 @@
 @{
     ViewData["Title"] = "Cadastro de Filmes";
 }
+<style>
+    :root {
+        --verde-principal: #009714;
+        --verde-escuro: #007a0a;
+        --verde-claro: #4CAF50;
+        --fundo-escuro: #1e1e2a;
+        --card-cinza: #2d2e37;
+        --texto-branco: #fcfeff;
+        --texto-cinza: #b0b0b0;
+        --borda-cinza: #3a3a4a;
+    }
 
+    h2 {
+        color: var(--texto-branco);
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 1.8rem;
+        
+    }
 
-<h2>Cadastro de Filmes</h2>
+    form {
+        background-color: var(--card-cinza);
+        padding: 25px;
+        border-radius: 10px;
+        max-width: 900px;
+        margin: 100px auto 0;
+        margin-top: 50px;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 8px;
+        color: var(--texto-cinza);
+        font-weight: 500;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    textarea,
+    select {
+        width: 100%;
+        padding: 10px 12px;
+        background-color: var(--fundo-escuro);
+        border: 1px solid var(--borda-cinza);
+        border-radius: 6px;
+        color: var(--texto-branco);
+    }
+
+    textarea {
+        min-height: 100px;
+        resize: vertical;
+    }
+
+    button, .btn {
+        padding: 10px 20px;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .btn-primary {
+        background-color: var(--verde-principal);
+        color: white;
+        border: none;
+    }
+
+        .btn-primary:hover {
+            background-color: var(--verde-escuro);
+        }
+
+    .btn-success {
+        background-color: var(--verde-escuro);
+        color: white;
+        border: none;
+    }
+
+    .classificacao-container {
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    .classificacao-opcao img {
+        width: 50px;
+        height: auto;
+        border: 2px solid transparent;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .classificacao-opcao input:checked + img {
+        border-color: white;
+        transform: translateY(-5px) scale(1.05);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    }
+
+    /* Preview imagem - mesmo funcionalidade, visual melhor */
+    #previewImagem {
+        max-width: 200px;
+        border: 1px solid var(--borda-cinza);
+        border-radius: 6px;
+        margin-top: 10px;
+        display: none;
+    }
+
+    /* Layout das linhas - sem alterar funcionalidade */
+    .form-flex-row {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .form-flex-col {
+        flex: 1;
+        min-width: 250px;
+    }
+</style>
 
 @if (ViewBag.Mensagem != null)
 {
-    <div class="alert alert-success">@ViewBag.Mensagem</div>
+    <div class="modal fade show" id="cadastroModal" tabindex="-1" role="dialog" style="display: block; background-color: rgba(0,0,0,0.5);" aria-labelledby="cadastroModalLabel" aria-modal="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-success">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="cadastroModalLabel">
+                        <i class="fas fa-check-circle"></i> Cadastro Realizado com Sucesso!
+                    </h5>
+                </div>
+                <div class="modal-body text-center">
+                    O filme <strong>@ViewBag.Mensagem</strong> foi cadastrado com sucesso.
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="@Url.Action("Index", "Filmes")" class="btn btn-outline-success">Ver Filmes</a>
+                    <button type="button" class="btn btn-success" onclick="fecharModal()">Cadastrar Outro</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function fecharModal() {
+            document.getElementById("cadastroModal").style.display = "none";
+            document.body.classList.remove("modal-open");
+            document.querySelector(".modal-backdrop")?.remove();
+        }
+
+        window.onload = function () {
+            setTimeout(() => {
+                document.getElementById("cadastroModal").classList.add("show");
+            }, 200);
+        };
+    </script>
 }
+
+
 
 <link rel="stylesheet" href="~/css/cadastro-filmes.css" />
 
@@ -27,15 +184,17 @@
 <script src="~/js/categoria.js"></script>
 
 
-<form asp-action="Cadastrar" method="post" enctype="multipart/form-data">
+<form action="@Url.Action("Cadastrar", "Filmes")" method="post" enctype="multipart/form-data">
+<h2>Cadastro de Filmes</h2>
+
     <div class="form-group">
         <label for="Titulo">Título:</label>
-        <input type="text" class="form-control" id="Titulo" name="Titulo" required />
+        <input type="text" class="form-control" id="Titulo" name="Titulo"  />
     </div>
 
     <div class="form-group">
         <label for="Resumo">Resumo:</label>
-        <textarea class="form-control" id="Resumo" name="Resumo" rows="3" required></textarea>
+        <textarea class="form-control" id="Resumo" name="Resumo" rows="3" ></textarea>
     </div>
 
     <div style="display: flex; gap: 20px; flex-wrap: wrap;">
@@ -53,7 +212,7 @@
     <div style="display: flex; gap: 20px; flex-wrap: wrap;">
         <div class="form-group" style="flex: 1;">
             <label for="Duracao">Duração (em minutos):</label>
-            <input type="number" class="form-control" id="Duracao" name="Duracao" required />
+            <input type="number" class="form-control" id="Duracao" name="Duracao"  />
         </div>
 
         <div class="form-group" style="flex: 1;">
@@ -68,6 +227,7 @@
             <select id="categoriaSelect" class="form-control">
                 <option disabled selected>Selecione uma categoria</option>
                 <option>Ação</option>
+                <option>Infantil</option>
                 <option>Comédia</option>
                 <option>Drama</option>
                 <option>Terror</option>
@@ -79,6 +239,29 @@
                 <option>Animação</option>
                 <option>Aventura</option>
                 <option>Musical</option>
+                <option>Detetive</option>
+                <option>Crime</option>
+                <option>Policial</option>
+                <option>Mistério</option>
+                <option>Thriller Psicológico</option>
+                <option>Guerra</option>
+                <option>Histórico</option>
+                <option>Biografia</option>
+                <option>Esporte</option>
+                <option>Faroeste</option>
+                <option>Noir</option>
+                <option>Catástrofe</option>
+                <option>Épico</option>
+                <option>Artes Marciais</option>
+                <option>Super-Herói</option>
+                <option>Mitologia</option>
+                <option>Culinária</option>
+                <option>Romance Histórico</option>
+                <option>Drama Criminal</option>
+                <option>Comédia Romântica</option>
+                <option>Fantasia Urbana</option>
+                <option>Suspense Policial</option>
+                <option>Filme Experimental</option>
             </select>
             <button type="button" onclick="adicionarCategoria()" class="btn btn-success">+</button>
         </div>
@@ -87,35 +270,64 @@
         <input type="hidden" id="GeneroLista" name="GeneroLista" />
     </div>
 
-    <div class="form-group">
-        <label for="capaUpload">Imagem da Capa:</label>
-        <input type="file" class="form-control" id="capaUpload" name="capaUpload" accept="image/*" onchange="previewCapa()" />
-        <div style="margin-top:10px;">
-            <img id="previewImagem" src="#" alt="Pré-visualização" style="max-width: 200px; display: none; border: 1px solid #ccc; padding: 5px;" />
+
+        <div class="form-group" style="flex: 1;">
+            <label for="capaUpload">Imagem da Capa:</label>
+            <input type="file" class="form-control" id="capaUpload" name="capaUpload" accept="image/*" onchange="previewCapa()" />
+            <div style="margin-top: 10px;">
+                <img id="previewImagem" src="#" alt="Pré-visualização" style="max-width: 200px; display: none; border: 1px solid #ccc; padding: 5px;" />
+            </div>
+        </div>
+
+        @{
+            var classificacoes = new List<CineBR.Models.ClassificationModel>
+            {
+                new CineBR.Models.ClassificationModel { Codigo = "L", Descricao = "Livre para todos os públicos", Logo = "L.png" },
+                new CineBR.Models.ClassificationModel { Codigo = "10", Descricao = "Maiores de 10 anos", Logo = "10.png" },
+                new CineBR.Models.ClassificationModel { Codigo = "12", Descricao = "Maiores de 12 anos", Logo = "12.png" },
+                new CineBR.Models.ClassificationModel { Codigo = "14", Descricao = "Maiores de 14 anos", Logo = "14.png" },
+                new CineBR.Models.ClassificationModel { Codigo = "16", Descricao = "Maiores de 16 anos", Logo = "16.png" },
+                new CineBR.Models.ClassificationModel { Codigo = "18", Descricao = "Maiores de 18 anos", Logo = "18.png" },
+            };
+        }
+        <div class="form-group">
+            <label>Classificação:</label>
+            <div class="classificacao-container">
+                @foreach (var item in classificacoes)
+                {
+                    <label class="classificacao-opcao">
+                        <input type="radio" name="ClassificacaoSelecionada" value="@item.Codigo" required />
+                        <img src="@Url.Content($"~/image/classification/{item.Logo}")" alt="@item.Descricao" />
+                    </label>
+                }
+            </div>
+        </div>
+
+@if (TempData["FilmeCadastrado"] != null)
+{
+    <div class="modal fade" id="cadastroModal" tabindex="-1" role="dialog" aria-labelledby="cadastroModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content border-success">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="cadastroModalLabel">
+                        <i class="fas fa-check-circle"></i> Cadastro Realizado com Sucesso!
+                    </h5>
+                </div>
+                <div class="modal-body text-center">
+                    O filme <strong>@TempData["FilmeCadastrado"]</strong> foi cadastrado com sucesso.
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <a href="@Url.Action("Index", "Filmes")" class="btn btn-outline-success">Ver Filmes</a>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cadastrar Outro</button>
+                </div>
+            </div>
         </div>
     </div>
 
-
-    <div class="form-group">
-        <label for="trailerlink">Link do Trailer:</label>
-        <input type="text" class="form-control" id="trailerlink" name="trailerlink" />
-    </div>
-
-    <div class="form-group">
-        <input type="checkbox" id="Ativo" name="Ativo" checked />
-        <label for="Ativo">Ativo</label>
-    </div>
-
-    <div class="form-group">
-        <input type="checkbox" id="ExibirNoSite" name="ExibirNoSite" checked />
-        <label for="ExibirNoSite">Exibir no site</label>
-    </div>
-
+}
 
     <button type="submit" class="btn btn-primary">Cadastrar Filme</button>
 </form>
-
-
 
 <script>
     function previewCapa() {
@@ -136,4 +348,9 @@
             preview.style.display = "none";
         }
     }
+
+    window.onload = function () {
+            var myModal = new bootstrap.Modal(document.getElementById('cadastroModal'));
+            myModal.show();
+    };
 </script>

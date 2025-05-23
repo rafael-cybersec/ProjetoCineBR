@@ -1,101 +1,357 @@
-﻿@model CineBR.Models.Filme
+﻿    @model CineBR.Models.Filme
+    @using System.IO
+    @using System.Security.Claims
+    @using CineBR.Models
+    @using CineBR.Services
 
-@{
-    Layout = User.IsInRole("Admin") ? "~/Views/Shared/_LayoutAdmin.cshtml" : "~/Views/Shared/_Layout.cshtml";
-}
+    @{
+        Layout = User.IsInRole("Admin") ? "~/Views/Shared/_LayoutAdmin.cshtml" : "~/Views/Shared/_Layout.cshtml";
 
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="/css/detalhes.css">
+        bool usuarioAutenticado = User.Identity.IsAuthenticated;
+        bool usuarioEhAdmin = User.IsInRole("Admin");
 
-<main>
-    <section class="movie-details">
-        <div class="movie-title">
-            <h1 class="movie-title">@Model.Titulo</h1>
+        string emailUsuario = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Email)?.Value;
+        string caminhoJsonUsuarios = System.IO.Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "data", "usuarios.json");
+        var usuario = UsuarioService.CarregarUsuarios(caminhoJsonUsuarios).FirstOrDefault(u => u.Email == emailUsuario);
+
+        var comentarios = ComentarioService.ObterPorFilme(Model.Id);
+        var usuarios = ViewBag.Usuarios as List<Usuario>;
+
+        // Like
+        bool curtiu = false;
+        if (usuarioAutenticado && !usuarioEhAdmin && usuario != null)
+        {
+            curtiu = LikeService.UsuarioJaCurtiu(Model.Id, usuario.Id);
+        }
+        var totalCurtidas = LikeService.ContarCurtidas(Model.Id);
+
+        // Classificação
+        var codigo = Model.ClassificacaoSelecionada;
+        var descricao = codigo switch
+        {
+            "L" => "Livre para todos os públicos",
+            "10" => "Maiores de 10 anos",
+            "12" => "Maiores de 12 anos",
+            "14" => "Maiores de 14 anos",
+            "16" => "Maiores de 16 anos",
+            "18" => "Maiores de 18 anos",
+            _ => "Desconhecida"
+        };
+        var caminhoImagem = $"/image/classification/{codigo}.png";
+    }
+
+    <main class="filme-detalhes-container">
+        <div class="filme-header">
+            <h1>@Model.Titulo</h1>
+            <p class="filme-lancamento">Lançado em: @Model.ReleaseDate.ToString("dd/MM/yyyy")</p>
         </div>
 
-        <div class="details-grid">
+        <div class="filme-grid">
+            <!-- Coluna da esquerda - Capa e informações básicas -->
+            <div class="filme-coluna-esquerda">
+                <img src="@Model.Capa" alt="Capa do filme" class="filme-capa">
 
-            <!-- Coluna da esquerda -->
-            <div class="left-column">
-                <img class="movie-cover" src="@Model.Capa" alt="@Model.Titulo">
-                <div class="movie-info">
-                    <p><strong>Gênero:</strong> @string.Join(" | ", Model.Genero)</p>
-                    <p><strong>Duração:</strong> @Model.Duracao minutos</p>
-                    <p><strong>Ano de Lançamento:</strong> @Model.releasedate</p>
+                <div class="filme-info-box">
+                    <div class="info-item">
+                        <span class="info-label">Gênero:</span>
+                        <span class="info-value">@string.Join(" | ", Model.Genero)</span>
+                    </div>
+
+                    @{
+                        int duracao = Model.Duracao;
+                        int horas = duracao / 60;
+                        int minutos = duracao % 60;
+                        string duracaoFormatada = $"{horas}h {minutos}min";
+                    }
+                    <div class="info-item">
+                        <span class="info-label">Duração:</span>
+                        <span class="info-value">@duracaoFormatada (@duracao Minutos)</span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="info-label">Classificação:</span>
+                        <div class="classificacao-item">
+                            <img src="@caminhoImagem" alt="@descricao" />
+                            <span>@descricao</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item curtidas">
+                        <span class="info-label">Curtidas:</span>
+                        <span class="info-value">❤️ @totalCurtidas</span>
+                        @if (usuarioAutenticado && !usuarioEhAdmin && usuario != null)
+                        {
+                            <form method="post" action="/Home/Curtir" class="curtir-form">
+                                <input type="hidden" name="idFilme" value="@Model.Id" />
+                                <input type="hidden" name="idUsuario" value="@usuario.Id" />
+                                <button type="submit" class="@(curtiu ? "curtido" : "nao-curtido")">
+                                    @(curtiu ? "💔 Descurtir" : "❤️ Curtir")
+                                </button>
+                            </form>
+                        }
+                    </div>
                 </div>
+
+                <!-- Equipe -->
+                    <!-- Direção -->
+                    <section class="direcao-section">
+                        <h3>Direção</h3>
+                        @if (Model.Diretor?.Any() == true)
+                        {
+                            <ul class="equipe-lista">
+                                @foreach (var diretor in Model.Diretor)
+                                {
+                                    <li>@diretor</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p class="sem-info">Nenhum diretor cadastrado.</p>
+                        }
+                    </section>
+
+                    <!-- Elenco -->
+                    <section class="elenco-section">
+                        <h3>Elenco</h3>
+                        @if (Model.Elenco?.Any() == true)
+                        {
+                            <ul class="equipe-lista">
+                                @foreach (var ator in Model.Elenco)
+                                {
+                                    <li>@ator</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <p class="sem-info">Nenhum ator cadastrado.</p>
+                        }
+                    </section>
+
             </div>
 
-            <!-- Coluna central -->
-            <div class="center-column">
-                <div class="trailer">
+            <!-- Coluna da direita - Conteúdo principal -->
+            <div class="filme-coluna-direita">
+                <!-- Trailer -->
+                <section class="trailer-section">
                     <h2>Trailer Oficial</h2>
-                    @if (!string.IsNullOrEmpty(Model.trailerlink))
+                    @if (!string.IsNullOrWhiteSpace(Model.TrailerLink))
                     {
-                        var embedLink = Model.trailerlink.Replace("watch?v=", "embed/");
-                        <iframe height="315"
-                                src="@embedLink"
-                                title="Trailer do Filme @Model.Titulo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen>
-                        </iframe>
+                        var videoId = "";
+                        if (Model.TrailerLink.Contains("watch?v="))
+                        {
+                            videoId = Model.TrailerLink.Split("watch?v=")[1].Split('&')[0];
+                        }
+                        else if (Model.TrailerLink.Contains("youtu.be/"))
+                        {
+                            videoId = Model.TrailerLink.Split("youtu.be/")[1].Split('?')[0];
+                        }
+
+                        var embedLink = $"https://www.youtube.com/embed/{videoId}";
+                        <div class="trailer-container">
+                            <iframe src="@embedLink" frameborder="0" allowfullscreen></iframe>
+                        </div>
                     }
                     else
                     {
-                        <p>Trailer não disponível.</p>
+                        <p class="trailer-indisponivel">Trailer não disponível.</p>
                     }
-                </div>
-            </div>
+                </section>
 
-            <!-- Coluna da direita -->
-            <div class="right-column">
-                <div class="sinopse">
+                <!-- Sinopse -->
+                <section class="sinopse-section">
                     <h2>Sinopse</h2>
-                    <p>@Model.Resumo</p>
-                </div>
+                    <div class="sinopse-content">
+                        <p>@Model.Resumo</p>
+                    </div>
+                </section>
 
-                <p><strong>Diretor:</strong></p>
-                <div class="diretor">
-                    @if (Model.Diretor != null && Model.Diretor.Any())
+                <!-- Comentários -->
+                <section class="comentarios-section">
+                    <h2>Comentários</h2>
+
+                    @if (comentarios?.Any() == true)
                     {
-                        foreach (var exibirdiretor in Model.Diretor)
-                        {
-                            <span class="diretor">@exibirdiretor</span>
-                        }
+                        <div class="comentarios-lista">
+                            @foreach (var c in comentarios)
+                            {
+                                <div class="comentario-card" id="comentario-@c.IdComentario">
+                                <div class="comentario-header">
+                                    <span class="comentario-autor">
+                                        @{
+                                            var usuarioComentario = usuarios.FirstOrDefault(u => u.Id == c.IdUsuario);
+                                            @(usuarioComentario?.Nome ?? "Usuário desconhecido")
+                                        }
+                                    </span>
+                                    <span class="comentario-data">
+                                        @c.DataCadastro.ToString("dd/MM/yyyy HH:mm")
+                                        @if (c.DataAtualizacao != null)
+                                        {
+                                            <span class="editado-badge">(Editado: @c.DataAtualizacao.Value.ToString("dd/MM/yyyy HH:mm"))</span>
+                                        }
+                                    </span>
+                                </div>
+
+                                    <p class="comentario-texto" id="texto-comentario-@c.IdComentario">@c.ComentarioTexto</p>
+
+                                        @if (usuarioAutenticado && usuario != null && c.IdUsuario == usuario.Id)
+                                        {
+                                            <div class="comentario-acoes">
+                                        <button class="acao-editar" data-id="@c.IdComentario" title="Editar comentário">
+                                            ✏️ Editar
+                                        </button>
+                                        <button class="acao-excluir" data-id="@c.IdComentario" title="Excluir comentário">
+                                            🗑️ Excluir
+                                        </button>
+                                            </div>
+                                        }
+                                </div>
+                            }
+                        </div>
                     }
                     else
                     {
-                        <p>Nenhum diretor disponível.</p>
+                        <p class="sem-comentarios">Nenhum comentário disponível.</p>
                     }
-                </div>
 
-                <p><strong>Elenco:</strong></p>
-                <div class="elenco">
-                    @if (Model.Elenco != null && Model.Elenco.Any())
+                    @if (usuarioAutenticado)
                     {
-                        foreach (var ator in Model.Elenco)
-                        {
-                            <span class="ator">@ator</span>
-                        }
+                        <form method="post" action="/Home/Comentar" class="comentar-form">
+                            <input id="IdFilme" type="hidden" name="IdFilme" value="@Model.Id" />
+                            <textarea id="ComentarioTexto" name="ComentarioTexto" placeholder="Escreva seu comentário..." required></textarea>
+                            <button type="submit">Comentar</button>
+                        </form>
                     }
                     else
                     {
-                        <p>Nenhum ator disponível.</p>
+                        <div class="login-prompt">
+                            <p>Faça <a href="/Usuario/CadastroLogin">login</a> para comentar e deixar a sua curtida.</p>
+                        </div>
                     }
-                </div>
+                </section>
             </div>
         </div>
 
-        <!-- Seção de comentários futura -->
-        <!--
-        <div class="comments-section">
-            <h2>Comentários</h2>
-            <form class="comment-form">
-                <textarea name="comentario" placeholder="Escreva seu comentário..." rows="4"></textarea>
-                <button type="submit">Enviar</button>
-            </form>
-            <div class="comment-list"></div>
-        </div>
-        -->
-    </section>
-</main>
+            <!-- Modal de Edição -->
+            <div id="modal-edicao" class="modal">
+                <div class="modal-content">
+                    <h3>Editar Comentário</h3>
+                    <textarea id="texto-comentario-edicao" rows="5" style="width: 100%;"></textarea>
+                    <div class="modal-botoes">
+                        <button onclick="fecharModalEdicao()" class="modal-cancelar">Cancelar</button>
+                        <button onclick="salvarEdicaoComentario()" class="modal-confirmar">Salvar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal de Exclusão -->
+            <div id="modal-exclusao" class="modal">
+                <div class="modal-content">
+                    <h3>Excluir Comentário</h3>
+                    <p>Tem certeza que deseja excluir este comentário?</p>
+                    <div class="modal-botoes">
+                        <button onclick="fecharModalExclusao()" class="modal-cancelar">Cancelar</button>
+                        <button onclick="confirmarExclusaoComentario()" class="modal-excluir">Excluir</button>
+                    </div>
+                </div>
+            </div>
+
+    </main>
+
+
+<script>
+    // Variável global para armazenar o ID do comentário
+    let comentarioSelecionadoId = null;
+
+    // ========== FUNÇÕES DE EDIÇÃO ==========
+    function EditarComentario(id) {
+        comentarioSelecionadoId = id;
+        const textoAtual = document.getElementById(`texto-comentario-${id}`).innerText.trim();
+        document.getElementById('texto-comentario-edicao').value = textoAtual;
+        document.getElementById('modal-edicao').classList.add('ativo');
+    }
+
+    function fecharModalEdicao() {
+        document.getElementById('modal-edicao').classList.remove('ativo');
+    }
+
+    function salvarEdicaoComentario() {
+        const novoTexto = document.getElementById('texto-comentario-edicao').value.trim();
+
+        if (!novoTexto || comentarioSelecionadoId === null) {
+            alert("Texto inválido.");
+            return;
+        }
+
+        fetch('/Home/EditarComentario', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                idComentario: comentarioSelecionadoId,
+                novoTexto: novoTexto
+            })
+        })
+        .then(res => {
+            if (res.ok) {
+                document.getElementById(`texto-comentario-${comentarioSelecionadoId}`).innerText = novoTexto;
+                fecharModalEdicao();
+            } else {
+                alert("Erro ao editar o comentário.");
+            }
+        })
+        .catch(() => alert("Erro na requisição."));
+    }
+
+    // ========== FUNÇÕES DE EXCLUSÃO ==========
+    function ExcluirComentario(id) {
+        comentarioSelecionadoId = id;
+        document.getElementById('modal-exclusao').classList.add('ativo');
+    }
+
+    function fecharModalExclusao() {
+        document.getElementById('modal-exclusao').classList.remove('ativo');
+    }
+
+    function confirmarExclusaoComentario() {
+        if (comentarioSelecionadoId === null) return;
+
+        fetch('/Home/ExcluirComentario', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ idComentario: comentarioSelecionadoId })
+        })
+        .then(res => {
+            if (res.ok) {
+                const item = document.getElementById(`comentario-${comentarioSelecionadoId}`);
+                if (item) item.remove();
+                fecharModalExclusao();
+            } else {
+                alert("Erro ao excluir o comentário.");
+            }
+        })
+        .catch(() => alert("Erro na requisição."));
+    }
+
+    // ========== EVENT DELEGATION ==========
+    document.addEventListener('click', function(event) {
+        // Botão "Editar"
+        if (event.target.classList.contains('acao-editar') || event.target.closest('.acao-editar')) {
+            const btn = event.target.classList.contains('acao-editar') ? event.target : event.target.closest('.acao-editar');
+            const id = btn.getAttribute('data-id');
+            EditarComentario(id);
+        }
+
+        // Botão "Excluir"
+        if (event.target.classList.contains('acao-excluir') || event.target.closest('.acao-excluir')) {
+            const btn = event.target.classList.contains('acao-excluir') ? event.target : event.target.closest('.acao-excluir');
+            const id = btn.getAttribute('data-id');
+            ExcluirComentario(id);
+        }
+    });
+</script>
+

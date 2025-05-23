@@ -20,30 +20,6 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 6.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Pages/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Pages/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Pages/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Pages/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Pages/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Views/AdminPages/CadastroFilmes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5QYWdlc1xDYWRhc3Ryb0ZpbG1lcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Views/Home/Detalhes.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhbGhlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Views/Home/filmes-curtidos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmaWxtZXMtY3VydGlkb3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Views/Home/Index.cshtml]
@@ -83,7 +63,3 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ctOS/Documents/GitHub/ProjetoCineBR/CineBR/Pages/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-e7pyw9f5iv

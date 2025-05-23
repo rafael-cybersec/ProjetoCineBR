@@ -1,0 +1,32 @@
+  [
+    {
+      "Codigo": "L",
+      "Descricao": "Livre para todos os públicos.",
+      "Logo": "L.png"
+    },
+    {
+      "Codigo": "10",
+      "Descricao": "Maiores de 10 anos.",
+      "Logo": "10.png"
+    },
+    {
+      "Codigo": "12",
+      "Descricao": "Maiores de 12 anos.",
+      "Logo": "12.png"
+    },
+    {
+      "Codigo": "14",
+      "Descricao": "Maiores de 14 anos.",
+      "Logo": "14.png"
+    },
+    {
+      "Codigo": "16",
+      "Descricao": "Maiores de 16 anos.",
+      "Logo": "16.png"
+    },
+    {
+      "Codigo": "18",
+      "Descricao": "Maiores de 18 anos.",
+      "Logo": "18.png"
+    }
+  ]

@@ -1,26 +1,279 @@
 [
   {
-    "id": 1,
-    "titulo": "Menino Maluquinho - O Filme",
-    "resumo": "Menino Maluquinho, baseado na obra de Ziraldo, conta as aventuras de um garoto alegre e cheio de imaginação, lidando com questões da infância e família.",
-    "diretor": [ "Helvécio Ratton" ],
-    "elenco": [ "Samuel Costa", "Patrícia Pillar", "Roberto Bomtempo", "Othon Bastos", "Tonico Pereira" ],
-    "duracao": 82,
-    "genero": [ "Comédia", "Família" ],
-    "capa": "image/menino-maluquinho.jpg",
-    "releasedate": 1995,
-    "trailerlink": "https://www.youtube.com/watch?v=3U-f4eHqcvw"
+    "Id": 1,
+    "Titulo": "Menino Maluqinho - O Filme",
+    "Resumo": "Maluquinho \u00E9 um garoto t\u00E3o menino quanto qualquer outro de sua idade. Brincalh\u00E3o, esperto e levado, ele teve a sorte de nascer numa fam\u00EDlia que lhe d\u00E1 carinho e que permite que ele realize todas as suas fantasias e divers\u00F5es da inf\u00E2ncia. Isso n\u00E3o impede que ele tamb\u00E9m passe por alguns sustos\u2026",
+    "Diretor": [
+      "Helv\u00E9cio Ratton"
+    ],
+    "Elenco": [
+      "Samuel Costa",
+      "Levildo Barbosa",
+      "Lu\u00EDs Carlos Arutin",
+      "Samuel Brand\u00E3o",
+      "Patr\u00EDcia Pillar",
+      "Othon Bastos",
+      "Roberto Bomtempo"
+    ],
+    "Genero": [
+      "Aventura",
+      "Com\u00E9dia",
+      "Infantil"
+    ],
+    "Duracao": 91,
+    "Capa": "/image/menino_maluquinho.jpg",
+    "ClassificacaoSelecionada": "L",
+    "DataHoraCadastro": "2025-05-13T18:04:42.2828567-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=3U-f4eHqcvw\u0026pp=0gcJCdgAo7VqN5tD",
+    "ReleaseDate": "1995-07-07T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
   },
   {
-    "id": 2,
-    "titulo": "Menino Maluquinho - O Filme",
-    "resumo": "Menino Maluquinho, baseado na obra de Ziraldo, conta as aventuras de um garoto alegre e cheio de imaginação, lidando com questões da infância e família.",
-    "diretor": [ "Helvécio Ratton" ],
-    "elenco": [ "Samuel Costa", "Patrícia Pillar", "Roberto Bomtempo", "Othon Bastos", "Tonico Pereira" ],
-    "duracao": 82,
-    "genero": [ "Comédia", "Família" ],
-    "capa": "image/filme-20.jpg",
-    "releasedate": 1995,
-    "trailerlink": "https://www.youtube.com/watch?v=3U-f4eHqcvw"
+    "Id": 2,
+    "Titulo": "Cidade de Deus",
+    "Resumo": "Buscap\u00E9 \u00E9 um jovem pobre, negro e sens\u00EDvel, que cresce em um universo de muita viol\u00EAncia. Ele vive na Cidade de Deus, favela carioca conhecida por ser um dos locais mais violentos do Rio de Janeiro. Amedrontado com a possibilidade de se tornar um bandido, Buscap\u00E9 \u00E9 salvo de seu destino por causa de seu talento como fot\u00F3grafo, o qual permite que siga carreira na profiss\u00E3o.",
+    "Diretor": [
+      "Fernando Meirelles",
+      "K\u00E1tia Lund"
+    ],
+    "Elenco": [
+      "Alexandre Rodrigues",
+      "Leandro Firmino",
+      "Phellipe Haagensen",
+      "Douglas Silva",
+      "Seu Jorge"
+    ],
+    "Genero": [
+      "Drama",
+      "Crime"
+    ],
+    "Duracao": 130,
+    "Capa": "/image/cidade_de_deus.jpg",
+    "ClassificacaoSelecionada": "16",
+    "DataHoraCadastro": "2025-05-14T10:15:33.1234567-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=ioUE_5wpg_E",
+    "ReleaseDate": "2002-08-30T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 3,
+    "Titulo": "Tropa de Elite",
+    "Resumo": "Nascimento, capit\u00E3o da Tropa de Elite do Rio de Janeiro, \u00E9 designado para chefiar uma das equipes que tem como miss\u00E3o apaziguar o Morro do Borel. Ele precisa cumprir as ordens enquanto procura por um substituto. A situa\u00E7\u00E3o se complica quando um de seus homens se envolve com a esposa de Nascimento.",
+    "Diretor": [
+      "Jos\u00E9 Padilha"
+    ],
+    "Elenco": [
+      "Wagner Moura",
+      "Caio Junqueira",
+      "Andr\u00E9 Ramiro",
+      "Maria Ribeiro",
+      "Fernanda Machado"
+    ],
+    "Genero": [
+      "A\u00E7\u00E3o",
+      "Drama",
+      "Crime"
+    ],
+    "Duracao": 115,
+    "Capa": "/image/tropa_de_elite.jpg",
+    "ClassificacaoSelecionada": "18",
+    "DataHoraCadastro": "2025-05-14T11:22:44.2345678-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=9W1G1qshkUI",
+    "ReleaseDate": "2007-10-05T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 4,
+    "Titulo": "O Auto da Compadecida",
+    "Resumo": "As aventuras de Jo\u00E3o Grilo e Chic\u00F3, dois nordestinos pobres que vivem de golpes para sobreviver. Eles est\u00E3o sempre enganando o povo de um pequeno vilarejo no sert\u00E3o da Para\u00EDba, inclusive o temido cangaceiro Severino de Aracaju, que os persegue pela regi\u00E3o.",
+    "Diretor": [
+      "Guel Arraes"
+    ],
+    "Elenco": [
+      "Matheus Nachtergaele",
+      "Selton Mello",
+      "Denise Fraga",
+      "Fernanda Montenegro",
+      "Marco Nanini"
+    ],
+    "Genero": [
+      "Com\u00E9dia",
+      "Aventura",
+      "Drama"
+    ],
+    "Duracao": 104,
+    "Capa": "/image/o_auto_da_compadecida.jpg",
+    "ClassificacaoSelecionada": "12",
+    "DataHoraCadastro": "2025-05-14T12:30:55.3456789-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=PPBIj2vZaXg",
+    "ReleaseDate": "2000-09-15T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 5,
+    "Titulo": "Central do Brasil",
+    "Resumo": "Dora, uma amargurada ex-professora, ganha a vida escrevendo cartas para pessoas analfabetas na Central do Brasil. Um dia, Josu\u00E9, um menino de 9 anos, cuja m\u00E3e acabou de morrer atropelada, pede que ela o leve ao interior do Nordeste para encontrar o pai que nunca conheceu.",
+    "Diretor": [
+      "Walter Salles"
+    ],
+    "Elenco": [
+      "Fernanda Montenegro",
+      "Vin\u00EDcius de Oliveira",
+      "Mar\u00EDlia P\u00EAra",
+      "Soia Lira",
+      "Othon Bastos"
+    ],
+    "Genero": [
+      "Drama"
+    ],
+    "Duracao": 110,
+    "Capa": "/image/central_do_brasil.jpg",
+    "ClassificacaoSelecionada": "12",
+    "DataHoraCadastro": "2025-05-14T13:45:12.456789-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=Q9w1HvGXxq4",
+    "ReleaseDate": "1998-04-03T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 6,
+    "Titulo": "Lisbela e o Prisioneiro",
+    "Resumo": "Lisbela \u00E9 uma jovem que adora ir ao cinema e vive sonhando com os gal\u00E3s de Hollywood. Lel\u00E9u \u00E9 um malandro conquistador, que em meio a uma de suas muitas aventuras, acaba sendo preso. Ao fugir da pris\u00E3o, ele se esconde no cinema da cidade, onde Lisbela trabalha.",
+    "Diretor": [
+      "Guel Arraes"
+    ],
+    "Elenco": [
+      "Selton Mello",
+      "D\u00E9bora Falabella",
+      "Marco Nanini",
+      "Rog\u00E9rio Cardoso",
+      "Fernanda Torres"
+    ],
+    "Genero": [
+      "Com\u00E9dia",
+      "Romance"
+    ],
+    "Duracao": 106,
+    "Capa": "/image/lislabela_e_o_prisioneiro.jpg",
+    "ClassificacaoSelecionada": "12",
+    "DataHoraCadastro": "2025-05-15T09:18:27.5678901-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=Q8Z3X6pX-1A",
+    "ReleaseDate": "2003-08-22T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 7,
+    "Titulo": "O Homem que Copiava",
+    "Resumo": "Andr\u00E9 \u00E9 um jovem t\u00EDmido que trabalha como operador de fotoc\u00F3pias e vive com sua m\u00E3e. Quando se apaixona por S\u00EDlvia, sua vizinha, ele inventa que \u00E9 cartunista para impression\u00E1-la. Para conseguir dinheiro e poder sair com ela, Andr\u00E9 come\u00E7a a falsificar dinheiro usando sua habilidade com a m\u00E1quina de xerox.",
+    "Diretor": [
+      "Jorge Furtado"
+    ],
+    "Elenco": [
+      "L\u00E1zaro Ramos",
+      "Leandra Leal",
+      "Pedro Cardoso",
+      "Luana Piovani",
+      "Camila Pitanga"
+    ],
+    "Genero": [
+      "Com\u00E9dia",
+      "Drama",
+      "Romance"
+    ],
+    "Duracao": 123,
+    "Capa": "/image/o_homem_que_copiava.jpg",
+    "ClassificacaoSelecionada": "14",
+    "DataHoraCadastro": "2025-05-15T10:25:38.6789012-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=3XWZQvWlA2g",
+    "ReleaseDate": "2003-11-21T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 8,
+    "Titulo": "Que Horas Ela Volta?",
+    "Resumo": "Val \u00E9 a fiel empregada dom\u00E9stica de uma fam\u00EDlia rica de S\u00E3o Paulo. Quando sua filha Jessica, que ela deixou no Nordeste para criar, aparece na casa dos patr\u00F5es para prestar vestibular, a rotina da fam\u00EDlia e os anos de lealdade de Val s\u00E3o colocados \u00E0 prova.",
+    "Diretor": [
+      "Anna Muylaert"
+    ],
+    "Elenco": [
+      "Regina Cas\u00E9",
+      "Michel Joelsas",
+      "Camila M\u00E1rdila",
+      "Karine Teles",
+      "Louren\u00E7o Mutarelli"
+    ],
+    "Genero": [
+      "Drama"
+    ],
+    "Duracao": 112,
+    "Capa": "/image/que_horas_ela_volta.jpg",
+    "ClassificacaoSelecionada": "12",
+    "DataHoraCadastro": "2025-05-15T11:32:49.7890123-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=z5xNoVDmNKs",
+    "ReleaseDate": "2015-08-27T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 9,
+    "Titulo": "Bacurau",
+    "Resumo": "Os moradores de Bacurau, um pequeno povoado do sert\u00E3o brasileiro, descobrem que a comunidade n\u00E3o consta mais em qualquer mapa. Aos poucos, percebem algo estranho na regi\u00E3o: enquanto drones passeiam pelos c\u00E9us, estrangeiros chegam \u00E0 cidade com um plano sinistro.",
+    "Diretor": [
+      "Kleber Mendon\u00E7a Filho",
+      "Juliano Dornelles"
+    ],
+    "Elenco": [
+      "S\u00F4nia Braga",
+      "Udo Kier",
+      "B\u00E1rbara Colen",
+      "Thomas Aquino",
+      "Silvero Pereira"
+    ],
+    "Genero": [
+      "Drama",
+      "Suspense",
+      "Fic\u00E7\u00E3o Cient\u00EDfica"
+    ],
+    "Duracao": 131,
+    "Capa": "/image/bacurau.jpg",
+    "ClassificacaoSelecionada": "16",
+    "DataHoraCadastro": "2025-05-15T12:40:00.8901234-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=Hh5k1Z7QYw4",
+    "ReleaseDate": "2019-08-29T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 10,
+    "Titulo": "Hoje Eu Quero Voltar Sozinho",
+    "Resumo": "Leonardo, um adolescente cego, tenta lidar com a m\u00E3e superprotetora ao mesmo tempo em que busca sua independ\u00EAncia. Quando Gabriel chega em seu col\u00E9gio, novos sentimentos come\u00E7am a surgir em Leonardo, fazendo com que ele descubra mais sobre si mesmo e sua sexualidade.",
+    "Diretor": [
+      "Daniel Ribeiro"
+    ],
+    "Elenco": [
+      "Ghilherme Lobo",
+      "Fabio Audi",
+      "Tess Amorim",
+      "Eucir de Souza",
+      "Lucia Romano"
+    ],
+    "Genero": [
+      "Drama",
+      "Romance"
+    ],
+    "Duracao": 96,
+    "Capa": "/image/Hoje_Eu_Quero_Voltar_Sozinho.jpg",
+    "ClassificacaoSelecionada": "12",
+    "DataHoraCadastro": "2025-05-15T13:47:11.9012345-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=45vW9jW2K1M",
+    "ReleaseDate": "2014-04-10T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
   }
 ]

@@ -6,13 +6,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - CineBR</title>
+    <title>Admin - CineBR 🎬</title>
 
-    <!-- Estilos -->
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/layout.css">
+
+    <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="/css/admin.css">
-    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+
+
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
@@ -20,12 +20,16 @@
     <header class="admin-header">
         <div class="nav container">
             <!-- Logo -->
-            <a href="/" class="logo admin-logo">Painel<span>Admin</span></a>
+            <a href="/" class="logo admin-logo">Painel<span>Admin🎬</span></a>
 
             <!-- Barra de Pesquisa -->
-            <div class="search-box">
-                <input type="search" id="search-input" placeholder="Pesquisar .">
-                <i class='bx bx-search'></i>
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="search" id="search-input" placeholder="Pesquisar Filme..." autocomplete="off">
+                    <i class='bx bx-search'></i>
+                </div>
+                <!-- Dropdown de resultados -->
+                <div id="resultadosPesquisa" class="resultados-dropdown"></div>
             </div>
 
             <!-- Boas-vindas -->
@@ -50,10 +54,14 @@
     </main>
 
     <footer class="footer admin-footer">
-        <p>&copy; 2025 CineBR - Administração</p>
+        <p>&copy; 2025 - CineBR - Administração</p>
     </footer>
 
+
+    <!-- Scripts -->
+    <script src="/js/search-box.js"></script>
     <script src="/js/swiper-bundle.min.js"></script>
     <script src="/js/main.js"></script>
+
 </body>
 </html>

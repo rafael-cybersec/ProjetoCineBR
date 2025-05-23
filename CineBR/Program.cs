@@ -38,4 +38,9 @@ app.MapControllerRoute(
     pattern: "filme/detalhes/{id?}",
     defaults: new { controller = "Home", action = "Detalhes" });
 
+app.MapControllerRoute(
+    name: "filmes-curtidos",
+    pattern: "Home/filmes-curtidos",
+    defaults: new { controller = "FilmesCurtidos", action = "filmes-curtidos" });
+
 app.Run();

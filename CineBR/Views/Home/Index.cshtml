@@ -4,19 +4,378 @@
     Layout = User.IsInRole("Admin") ? "~/Views/Shared/_LayoutAdmin.cshtml" : "~/Views/Shared/_Layout.cshtml";
 }
 
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    :root {
+        --main-color: #009714;
+        --hover-color: hsl(115, 100%, 26%);
+        --primary: #009714;
+        --primary-dark: #007a0a;
+        --primary-light: #4CAF50;
+        --body-color: #1a1a1a;
+        --background: #1e1e2a;
+        --container-color: #0f0f11;
+        --surface: #2d2e37;
+        --surface-light: #33343f;
+        --text-color: #fcfeff;
+        --text-primary: #fcfeff;
+        --text-secondary: #b0b0b0;
+        --border: #3a3a4a;
+        --error: #f44336;
+        --success: #4CAF50;
+        --warning: #FFC107;
+    }
+
+    body {
+        background-color: var(--background);
+        color: var(--text-color);
+        font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+        min-height: 100vh;
+    }
+
+    main {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+    }
+
+    h1, h2, h3 {
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        color: var(--text-primary);
+    }
+
+    h1 {
+        font-size: 2rem;
+        border-bottom: 2px solid var(--primary);
+        padding-bottom: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Swiper Section */
+    .swiper-section {
+        margin-bottom: 3rem;
+    }
+
+    .swiper {
+        width: 100%;
+        padding: 1rem 0 3rem;
+        position: relative;
+    }
+
+    .swiper-wrapper {
+        display: flex;
+        transition-timing-function: ease-out;
+    }
+
+    .swiper-slide {
+        flex-shrink: 0;
+        width: calc(20% - 16px);
+        margin-right: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    @@media (max-width: 1024px) {
+        .swiper-slide {
+            width: calc(33.333% - 13.333px);
+        }
+    }
+
+    @@media (max-width: 768px) {
+        .swiper-slide {
+            width: calc(50% - 5px);
+        }
+    }
+
+    /* Movie Cards */
+    .movie-card {
+        background: var(--surface);
+        border-radius: 0.5rem;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+        .movie-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+            background: var(--surface-light);
+        }
+
+        .movie-card a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .movie-card img {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 2/3;
+            object-fit: cover;
+            display: block;
+        }
+
+        .movie-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--primary);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.3s ease;
+        }
+
+        .movie-card:hover::after {
+            transform: scaleX(1);
+        }
+
+    /* Movies Grid */
+    .movies-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    /* Navigation Buttons */
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: var(--surface);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        z-index: 10;
+        opacity: 0.7;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .swiper-button-next
+    {
+        margin-left: 100px;
+    }
+
+    .swiper-navigation-container {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        z-index: 10;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        margin: 0;
+    }
+
+    .swiper-pagination {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        display: flex;
+        gap: 8px;
+    }
+
+        .swiper-button-next:hover,
+        .swiper-button-prev:hover {
+            opacity: 1;
+            background-color: var(--primary);
+        }
+
+    .swiper-button-next {
+        right: 10px;
+    }
+
+    .swiper-button-prev {
+        left: 10px;
+    }
+
+        .swiper-button-next::after,
+        .swiper-button-prev::after {
+            content: '';
+            width: 12px;
+            height: 12px;
+            border: 2px solid var(--text-primary);
+            border-left: none;
+            border-bottom: none;
+        }
+
+    .swiper-button-next::after {
+        transform: rotate(45deg) translate(-1px, -1px);
+    }
+
+    .swiper-button-prev::after {
+        transform: rotate(-135deg) translate(-1px, -1px);
+    }
+
+    /* Pagination */
+    .swiper-pagination {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: var(--text-secondary);
+        opacity: 0.5;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--primary);
+        opacity: 1;
+        transform: scale(1.2);
+    }
+
+    /* Responsive Adjustments */
+    @@media (max-width: 640px) {
+        .movies-grid {
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+        }
+    }
+</style>
+
 <main>
+    <section class="swiper-section">
+        <h1>Adicionados Recentemente</h1>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                @foreach (var filme in Model.Filmes.OrderByDescending(f => f.DataHoraCadastro).Take(10))
+                {
+                    <div class="swiper-slide">
+                        <div class="movie-card">
+                            <a href="/filme/detalhes/@filme.Id">
+                                <img src="@filme.Capa" alt="@filme.Titulo" />
+                            </a>
+                        </div>
+                    </div>
+                }
+            </div>
+
+            <div class="swiper-navigation-container">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination">
+                    <span class="swiper-pagination-bullet"></span>
+                    <span class="swiper-pagination-bullet"></span>
+                    <span class="swiper-pagination-bullet"></span>
+                </div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </section>
+
     <section class="movies-list">
-        <h1>Filmes Nacionais</h1>
+        <h1>Todos os Filmes</h1>
         <div id="movies-grid" class="movies-grid">
             @foreach (var filme in Model.Filmes)
             {
                 <div class="movie-card">
                     <a href="/filme/detalhes/@filme.Id">
                         <img src="@filme.Capa" alt="@filme.Titulo">
-                        <h3>@filme.Titulo</h3>
                     </a>
                 </div>
             }
         </div>
     </section>
 </main>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const swiperContainer = document.querySelector('.swiper');
+
+        if (!swiperContainer) return;
+
+        const swiper = new Swiper(swiperContainer, {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            loop: true,
+            centeredSlides: false,
+            watchOverflow: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+            },
+            pagination: swiperContainer.querySelector('.swiper-pagination') ? {
+                el: swiperContainer.querySelector('.swiper-pagination'),
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '"></span>';
+                },
+            } : false,
+            navigation: {
+                nextEl: swiperContainer.querySelector('.swiper-button-next'),
+                prevEl: swiperContainer.querySelector('.swiper-button-prev')
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 20
+                }
+            }
+        });
+
+        // Hover effect for movie cards
+        document.querySelectorAll('.movie-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-5px)';
+                card.style.boxShadow = '0 10px 15px rgba(0, 0, 0, 0.2)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = '';
+                card.style.boxShadow = '';
+            });
+        });
+    });
+</script>
