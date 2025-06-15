@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\data\\comentarios.json"
     },
     {
+      "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\credentials.json",
+      "PackagePath": "staticwebassets\\data\\credentials.json"
+    },
+    {
       "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\filmes.json",
       "PackagePath": "staticwebassets\\data\\filmes.json"
     },
@@ -93,6 +97,10 @@
       "PackagePath": "staticwebassets\\image\\filme_11.jpg"
     },
     {
+      "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\image\\filme_12.jpeg",
+      "PackagePath": "staticwebassets\\image\\filme_12.jpeg"
+    },
+    {
       "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\image\\filme_12.jpg",
       "PackagePath": "staticwebassets\\image\\filme_12.jpg"
     },
@@ -109,12 +117,20 @@
       "PackagePath": "staticwebassets\\image\\filme_15.jpg"
     },
     {
+      "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\image\\filme_16.jpg",
+      "PackagePath": "staticwebassets\\image\\filme_16.jpg"
+    },
+    {
       "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\image\\filme_16.png",
       "PackagePath": "staticwebassets\\image\\filme_16.png"
     },
     {
       "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\image\\filme_17.jpeg",
       "PackagePath": "staticwebassets\\image\\filme_17.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\image\\filme_17.jpg",
+      "PackagePath": "staticwebassets\\image\\filme_17.jpg"
     },
     {
       "Id": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\image\\filme_18.jpg",

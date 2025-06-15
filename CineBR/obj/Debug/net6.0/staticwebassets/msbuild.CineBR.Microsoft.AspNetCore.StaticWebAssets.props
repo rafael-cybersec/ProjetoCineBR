@@ -66,11 +66,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>plvpf2puye</Fingerprint>
-      <Integrity>w8xJlEOoSVDDIMmwqPxmKOGpqqpeZcBL0phOvoDgknA=</Integrity>
+      <Fingerprint>mm88f76kah</Fingerprint>
+      <Integrity>Utf5SD0Rm1v2vzsHkStTKuK2xil/ylaDNhFpn+/5zl8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\comentarios.json'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\credentials.json'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CineBR</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CineBR</BasePath>
+      <RelativePath>data/credentials.json</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bak57074ff</Fingerprint>
+      <Integrity>88xEbludb7UoaDBrFYzdm7VpVKxPM0SzF9vAD0wJCi0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\credentials.json'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\filmes.json'))">
       <SourceType>Package</SourceType>
@@ -84,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>7d80vh4vmf</Fingerprint>
-      <Integrity>pXKYK1PVIbSd33JXteWK49JWBWAH6XG2wa0cUJ1zxfk=</Integrity>
+      <Fingerprint>zo1k0z9wx1</Fingerprint>
+      <Integrity>bb6oO3v43sndE2JKWZl4GH8y4teesJgQP19MffxfYzE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\filmes.json'))</OriginalItemSpec>
@@ -102,8 +120,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>g9moxdv3cj</Fingerprint>
-      <Integrity>tEu/GGG31d5P2eTpZ2D7rLPo5RrL6uki6TLh+/jSx3k=</Integrity>
+      <Fingerprint>fu7ifh5jjg</Fingerprint>
+      <Integrity>yaRQ707vNduxVa2SCznHEYH3QF2IuBJ661mGM4hj3GA=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\likes.json'))</OriginalItemSpec>
@@ -120,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>ngks2cp0os</Fingerprint>
-      <Integrity>aSco5A74iuiAUpP/NHnVd5v56982qlMI87oNunz7vfY=</Integrity>
+      <Fingerprint>f68qkl8um3</Fingerprint>
+      <Integrity>GUz3JLbydEHCKLVfrR6DywxIDwjFQpVqjwzH4jnHSUw=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\usuarios.json'))</OriginalItemSpec>
@@ -372,8 +390,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>45nap2x5ok</Fingerprint>
-      <Integrity>qOTdhLRT1Mp+PMpzORRFgY1cEouNOox+UqKGCXcsWn8=</Integrity>
+      <Fingerprint>nqt1dkwlsy</Fingerprint>
+      <Integrity>MXbrO1JOI8iyAt7Eb12yXxLyqQFzZs15qmkyeS5T4NU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_11.jpeg'))</OriginalItemSpec>
@@ -390,11 +408,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>19ptoqw879</Fingerprint>
-      <Integrity>6xrA67a2Q2CBZK+SyVM9yo67JT4LCGnKN/gfFvx7ViA=</Integrity>
+      <Fingerprint>0n78zvubsb</Fingerprint>
+      <Integrity>VKgGzCdgZcucFgs2BxQW1h72E4xrZEuLQtE2lL0r7HE=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_11.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_12.jpeg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CineBR</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CineBR</BasePath>
+      <RelativePath>image/filme_12.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>nqt1dkwlsy</Fingerprint>
+      <Integrity>MXbrO1JOI8iyAt7Eb12yXxLyqQFzZs15qmkyeS5T4NU=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_12.jpeg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_12.jpg'))">
       <SourceType>Package</SourceType>
@@ -408,8 +444,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>a9vs1h8buy</Fingerprint>
-      <Integrity>wq2xsRVQHKrGyU2RNTn+OkYfXL7ZBs3qyvAteFALqfU=</Integrity>
+      <Fingerprint>u8eqlim30q</Fingerprint>
+      <Integrity>nqdauo4DaM1bY6h6C5CI8FBueSCdrYd17eu5uud5lQ0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_12.jpg'))</OriginalItemSpec>
@@ -426,8 +462,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>a8sigu5l5a</Fingerprint>
-      <Integrity>lshleGF0yJmrh+w3MOXYH/LdaMP147gdFfDW4RBo+K0=</Integrity>
+      <Fingerprint>u8eqlim30q</Fingerprint>
+      <Integrity>nqdauo4DaM1bY6h6C5CI8FBueSCdrYd17eu5uud5lQ0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_13.jpg'))</OriginalItemSpec>
@@ -444,8 +480,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>3yrlmee4a6</Fingerprint>
-      <Integrity>uy7GHk673Sh4N2EDd5ygcMs9v8gRkzDUoehhYfoZkEw=</Integrity>
+      <Fingerprint>hm02t5vv27</Fingerprint>
+      <Integrity>qZBYZ1z9YxlPrUqzxnCGW5dV+P10qKwwGSfwLhWzdt4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_14.jpg'))</OriginalItemSpec>
@@ -462,11 +498,29 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>6yhh9mkl8r</Fingerprint>
-      <Integrity>HrZ5HFIp1j9ejjTGaJVvNX1CizYOr7Ck6j8rihfMECw=</Integrity>
+      <Fingerprint>3vsh21hogq</Fingerprint>
+      <Integrity>X6KYNQsbakUMunORVm71WGsnGTFKAti6o2+6mljDhzs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_15.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_16.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CineBR</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CineBR</BasePath>
+      <RelativePath>image/filme_16.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>hm02t5vv27</Fingerprint>
+      <Integrity>qZBYZ1z9YxlPrUqzxnCGW5dV+P10qKwwGSfwLhWzdt4=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_16.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_16.png'))">
       <SourceType>Package</SourceType>
@@ -503,6 +557,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_17.jpeg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_17.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>CineBR</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/CineBR</BasePath>
+      <RelativePath>image/filme_17.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>u8eqlim30q</Fingerprint>
+      <Integrity>nqdauo4DaM1bY6h6C5CI8FBueSCdrYd17eu5uud5lQ0=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_17.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_18.jpg'))">
       <SourceType>Package</SourceType>

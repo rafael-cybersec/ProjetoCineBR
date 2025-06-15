@@ -12,11 +12,14 @@ namespace CineBR.Controllers
     public class FilmesController : Controller
     {
         private readonly IWebHostEnvironment _env;
+        private readonly EmailService _emailService;
+
         private string CaminhoJson => Path.Combine(_env.WebRootPath, "data", "filmes.json");
 
-        public FilmesController(IWebHostEnvironment env)
+        public FilmesController(IWebHostEnvironment env, EmailService emailService)
         {
             _env = env;
+            _emailService = emailService;
         }
 
         private IActionResult VerificarAdmin(bool redirecionar = false)
@@ -36,7 +39,6 @@ namespace CineBR.Controllers
             foreach (var c in textoNormalizado)
             {
                 var categoria = CharUnicodeInfo.GetUnicodeCategory(c);
-                // Remover acentos, pontuação e espaços
                 if (categoria != UnicodeCategory.NonSpacingMark && !char.IsPunctuation(c) && !char.IsWhiteSpace(c))
                 {
                     sb.Append(char.ToLowerInvariant(c));
@@ -55,19 +57,18 @@ namespace CineBR.Controllers
             var model = new Classification
             {
                 Classifications = new List<ClassificationModel>
-        {
-            new ClassificationModel { Codigo = "L", Descricao = "Livre", Logo = "/images/classifications/L.png" },
-            new ClassificationModel { Codigo = "10", Descricao = "Maiores de 10 anos", Logo = "/images/classifications/10.png" },
-            new ClassificationModel { Codigo = "12", Descricao = "Maiores de 12 anos", Logo = "/images/classifications/12.png" },
-            new ClassificationModel { Codigo = "14", Descricao = "Maiores de 14 anos", Logo = "/images/classifications/14.png" },
-            new ClassificationModel { Codigo = "16", Descricao = "Maiores de 16 anos", Logo = "/images/classifications/16.png" },
-            new ClassificationModel { Codigo = "18", Descricao = "Maiores de 18 anos", Logo = "/images/classifications/18.png" }
-        }
+                {
+                    new ClassificationModel { Codigo = "L", Descricao = "Livre", Logo = "/images/classifications/L.png" },
+                    new ClassificationModel { Codigo = "10", Descricao = "Maiores de 10 anos", Logo = "/images/classifications/10.png" },
+                    new ClassificationModel { Codigo = "12", Descricao = "Maiores de 12 anos", Logo = "/images/classifications/12.png" },
+                    new ClassificationModel { Codigo = "14", Descricao = "Maiores de 14 anos", Logo = "/images/classifications/14.png" },
+                    new ClassificationModel { Codigo = "16", Descricao = "Maiores de 16 anos", Logo = "/images/classifications/16.png" },
+                    new ClassificationModel { Codigo = "18", Descricao = "Maiores de 18 anos", Logo = "/images/classifications/18.png" }
+                }
             };
 
             return View("~/Views/AdminPages/CadastroFilmes.cshtml", model);
         }
-
 
         [HttpPost]
         public async Task<IActionResult> Cadastrar(Filme filme, string DiretorLista, string ElencoLista,
@@ -83,27 +84,25 @@ namespace CineBR.Controllers
             filme.Ativo = Ativo;
             filme.ExibirNoSite = ExibirNoSite;
 
-
-            // Conversão de listas Tagify
             filme.Diretor = ConverterParaLista(DiretorLista);
             filme.Elenco = ConverterParaLista(ElencoLista);
             filme.Genero = ConverterParaLista(GeneroLista);
 
-            // Processamento da imagem de capa
             if (capaUpload != null && capaUpload.Length > 0)
             {
                 filme.Capa = await ProcessarArquivo(capaUpload, "filme", filme.Id, "image");
             }
 
-            // Processamento da imagem da classificação indicativa
-            filme.ClassificacaoSelecionada = filme.ClassificacaoSelecionada; // já vem do form
+            filme.ClassificacaoSelecionada = filme.ClassificacaoSelecionada;
             var codigo = filme.ClassificacaoSelecionada;
             var caminhoLogo = $"/images/classifications/{codigo}.png";
 
             filmes.Add(filme);
             SalvarFilmes(filmes);
 
-            ViewBag.Mensagem = $"🎬 Filme \"{filme.Titulo}\" cadastrado com sucesso!";
+            // ✅ Envio de e-mail para os assinantes
+            await _emailService.EnviarEmailNovoFilmeAsync(filme);
+
             return View("~/Views/AdminPages/CadastroFilmes.cshtml");
         }
 
@@ -141,11 +140,10 @@ namespace CineBR.Controllers
 
         private string RemoverAcentos(string texto)
         {
-            return new string(texto.Normalize(System.Text.NormalizationForm.FormD)
-                .Where(ch => System.Globalization.CharUnicodeInfo.GetUnicodeCategory(ch) != System.Globalization.UnicodeCategory.NonSpacingMark)
+            return new string(texto.Normalize(NormalizationForm.FormD)
+                .Where(ch => CharUnicodeInfo.GetUnicodeCategory(ch) != UnicodeCategory.NonSpacingMark)
                 .ToArray());
         }
-
 
         private List<string> ConverterParaLista(string entrada)
         {
@@ -191,13 +189,9 @@ namespace CineBR.Controllers
 
         private async Task<string> ProcessarArquivo(IFormFile arquivo, string prefixo, int id, string pasta)
         {
-            // Verificação do tipo de arquivo (pode ser personalizada)
             if (!arquivo.ContentType.StartsWith("image"))
-            {
                 throw new InvalidOperationException("O arquivo enviado não é uma imagem.");
-            }
 
-            // Definindo o caminho
             var caminhoPasta = Path.Combine(_env.WebRootPath, pasta);
             Directory.CreateDirectory(caminhoPasta);
 
@@ -205,11 +199,11 @@ namespace CineBR.Controllers
             var nomeArquivo = $"{prefixo}_{id}{extensao}";
             var caminhoCompleto = Path.Combine(caminhoPasta, nomeArquivo);
 
-            // Salvando o arquivo
             using var stream = new FileStream(caminhoCompleto, FileMode.Create);
             await arquivo.CopyToAsync(stream);
 
             return $"/{pasta}/{nomeArquivo}";
+
         }
     }
 }

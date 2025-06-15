@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "ContainingType": "CineBR.Controllers.EmailController",
+    "Method": "EnviarEmailsNovoFilme",
+    "RelativePath": "api/Email/EnviarEmailsNovoFilme",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filme",
+        "Type": "CineBR.Models.Filme",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CineBR.Controllers.EmailController",
+    "Method": "NotificarNovoTitulo",
+    "RelativePath": "api/Email/NotificarNovoTitulo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "titulo",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

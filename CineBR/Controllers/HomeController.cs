@@ -154,7 +154,6 @@ namespace CineBR.Controllers
             }
         }
 
-
         [HttpPost]
         public IActionResult ExcluirComentario([FromBody] ComentarioExcluirModel model)
         {
@@ -176,10 +175,6 @@ namespace CineBR.Controllers
                 return BadRequest();
             }
         }
-
-
-
-
 
         [HttpPost]
         public IActionResult Curtir(int idFilme, string idUsuario)

@@ -5,7 +5,7 @@
     "IdUsuario": "f8c9d204-2530-4ef6-8d4e-d2f092809269",
     "DataCadastro": "2025-05-17T15:35:41.734031-03:00",
     "Ativo": true,
-    "DataAtualizacao": "2025-05-21T18:14:50.0528971-03:00"
+    "DataAtualizacao": "2025-06-07T13:45:10.2547501-03:00"
   },
   {
     "IdLike": 2,
@@ -14,5 +14,21 @@
     "DataCadastro": "2025-05-17T15:36:33.9780906-03:00",
     "Ativo": true,
     "DataAtualizacao": "2025-05-17T15:36:42.4560587-03:00"
+  },
+  {
+    "IdLike": 3,
+    "IdFilme": 1,
+    "IdUsuario": "9d26cdc4-b7f6-4836-8805-60902bc28a39",
+    "DataCadastro": "2025-06-11T16:47:42.3997907-03:00",
+    "Ativo": true,
+    "DataAtualizacao": null
+  },
+  {
+    "IdLike": 4,
+    "IdFilme": 1,
+    "IdUsuario": "c3398ac7-fed1-4aa8-9048-9bdd3a1f859c",
+    "DataCadastro": "2025-06-14T12:07:50.4620425-03:00",
+    "Ativo": true,
+    "DataAtualizacao": null
   }
 ]

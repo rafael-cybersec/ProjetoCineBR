@@ -1,4 +1,4 @@
-﻿namespace CineBR.Models
+﻿    namespace CineBR.Models
 {
     public class Classification
     {

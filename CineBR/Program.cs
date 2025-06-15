@@ -1,15 +1,19 @@
-using Microsoft.AspNetCore.Authentication.Cookies;
+ï»¿using Microsoft.AspNetCore.Authentication.Cookies;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adiciona o serviço de autenticação e cookies
+// ServiÃ§o de email (mantido)
+builder.Services.AddTransient<EmailService>();
+
 builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
-    .AddCookie(options =>
-    {
-        options.LoginPath = "/Usuario/CadastroLogin";  // Página de login
-        options.LogoutPath = "/Usuario/Logout";       // Página de logout
-        options.AccessDeniedPath = "/Usuario/AccessDenied"; // Página de acesso negado, caso necessário
-    });
+
+.AddCookie(options =>
+{
+    options.LoginPath = "/Usuario/CadastroLogin";
+    options.LogoutPath = "/Usuario/Logout";
+    options.AccessDeniedPath = "/Usuario/AccessDenied";
+});
 
 builder.Services.AddControllersWithViews();
 
@@ -25,9 +29,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
 
-// Habilita a autenticação e autorização
-app.UseAuthentication();  // Adiciona a autenticação
-app.UseAuthorization();   // Adiciona a autorização
+app.UseAuthentication(); // Habilita autenticaÃ§Ã£o
+app.UseAuthorization();  // Habilita autorizaÃ§Ã£o
 
 app.MapControllerRoute(
     name: "default",

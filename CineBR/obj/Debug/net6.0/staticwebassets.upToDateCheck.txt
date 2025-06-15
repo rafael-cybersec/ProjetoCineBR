@@ -2,6 +2,7 @@ wwwroot\css\admin.css
 wwwroot\css\style.css
 wwwroot\data\classifications.json
 wwwroot\data\comentarios.json
+wwwroot\data\credentials.json
 wwwroot\data\filmes.json
 wwwroot\data\likes.json
 wwwroot\data\usuarios.json
@@ -20,12 +21,15 @@ wwwroot\image\filme_1.jpg
 wwwroot\image\filme_10.jpg
 wwwroot\image\filme_11.jpeg
 wwwroot\image\filme_11.jpg
+wwwroot\image\filme_12.jpeg
 wwwroot\image\filme_12.jpg
 wwwroot\image\filme_13.jpg
 wwwroot\image\filme_14.jpg
 wwwroot\image\filme_15.jpg
+wwwroot\image\filme_16.jpg
 wwwroot\image\filme_16.png
 wwwroot\image\filme_17.jpeg
+wwwroot\image\filme_17.jpg
 wwwroot\image\filme_18.jpg
 wwwroot\image\filme_19.jpg
 wwwroot\image\filme_2.jpg

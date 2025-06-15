@@ -3,52 +3,68 @@
   "WorkspaceRootPath": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\data\\comentarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\data\\comentarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\controllers\\filmescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\controllers\\filmescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\usuario\\cadastrologin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\usuario\\cadastrologin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\controllers\\filmescurtidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\controllers\\filmescurtidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\adminpages\\cadastrofilmes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\adminpages\\cadastrofilmes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\home\\detalhes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\home\\detalhes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\controllers\\filmescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\controllers\\filmescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\home\\filmes-curtidos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\home\\filmes-curtidos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\data\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\data\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\data\\filmes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\data\\filmes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\models\\homeviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\models\\classification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\models\\classification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\models\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\models\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\controllers\\filmescurtidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\controllers\\filmescurtidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\data\\classifications.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\data\\classifications.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\data\\credentials.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\data\\credentials.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\data\\comentarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\data\\comentarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\models\\like.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,52 +75,68 @@
       "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\models\\filme.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\controllers\\adminpagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\controllers\\adminpagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\services\\comentarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\services\\comentarioservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\models\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\models\\comentario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\services\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\js\\search-box.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\js\\search-box.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\usuario\\cadastrologin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\usuario\\cadastrologin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\js\\diretor-elenco.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\js\\diretor-elenco.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\services\\filmeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\services\\filmeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\adminpages\\cadastrofilmes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\adminpages\\cadastrofilmes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\data\\filmes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\data\\filmes.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\home\\filmes-curtidos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\home\\filmes-curtidos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\data\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\data\\usuarios.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\js\\search-box.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\js\\search-box.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\css\\admin.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\shared\\_layoutadmin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\views\\adminpages\\dashboardfilmes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\views\\adminpages\\dashboardfilmes.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|c:\\users\\ctos\\documents\\github\\projetocinebr\\cinebr\\wwwroot\\js\\diretor-elenco.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{F7413154-9583-4851-8A20-9AE4A5EBE1D6}|CineBR\\CineBR.csproj|solutionrelative:cinebr\\wwwroot\\js\\diretor-elenco.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,7 +146,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 19,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,32 +158,103 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
+              "Title": "HomeViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Models\\HomeViewModel.cs",
+              "RelativeDocumentMoniker": "CineBR\\Models\\HomeViewModel.cs",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Models\\HomeViewModel.cs",
+              "RelativeToolTip": "CineBR\\Models\\HomeViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-11T19:38:37.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AdminPagesController.cs",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\AdminPagesController.cs",
+              "RelativeDocumentMoniker": "CineBR\\Controllers\\AdminPagesController.cs",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\AdminPagesController.cs",
+              "RelativeToolTip": "CineBR\\Controllers\\AdminPagesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T23:02:05.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "EmailController.cs",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\EmailController.cs",
+              "RelativeDocumentMoniker": "CineBR\\Controllers\\EmailController.cs",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\EmailController.cs",
+              "RelativeToolTip": "CineBR\\Controllers\\EmailController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T19:12:51.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "credentials.json",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\credentials.json",
+              "RelativeDocumentMoniker": "CineBR\\wwwroot\\data\\credentials.json",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\credentials.json",
+              "RelativeToolTip": "CineBR\\wwwroot\\data\\credentials.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAACgAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-08T19:57:47.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Classification.cs",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Models\\Classification.cs",
+              "RelativeDocumentMoniker": "CineBR\\Models\\Classification.cs",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Models\\Classification.cs",
+              "RelativeToolTip": "CineBR\\Models\\Classification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T14:54:11.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\appsettings.json",
+              "RelativeDocumentMoniker": "CineBR\\appsettings.json",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\appsettings.json",
+              "RelativeToolTip": "CineBR\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-03T17:55:11.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Services\\EmailService.cs",
+              "RelativeDocumentMoniker": "CineBR\\Services\\EmailService.cs",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Services\\EmailService.cs",
+              "RelativeToolTip": "CineBR\\Services\\EmailService.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAowFAAAABGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T19:01:00.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
               "Title": "UsuarioController.cs",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\UsuarioController.cs",
               "RelativeDocumentMoniker": "CineBR\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "CineBR\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGAAAAA6AAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-23T16:05:26.517Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-23T16:05:26.517Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FilmesCurtidosController.cs",
-              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\FilmesCurtidosController.cs",
-              "RelativeDocumentMoniker": "CineBR\\Controllers\\FilmesCurtidosController.cs",
-              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\FilmesCurtidosController.cs",
-              "RelativeToolTip": "CineBR\\Controllers\\FilmesCurtidosController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA1wCkAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T20:03:55.985Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Like.cs",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Models\\Like.cs",
               "RelativeDocumentMoniker": "CineBR\\Models\\Like.cs",
@@ -163,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 30,
               "Title": "filmes-curtidos.cshtml",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Home\\filmes-curtidos.cshtml",
               "RelativeDocumentMoniker": "CineBR\\Views\\Home\\filmes-curtidos.cshtml",
@@ -175,44 +278,69 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Detalhes.cshtml",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Home\\Detalhes.cshtml",
               "RelativeDocumentMoniker": "CineBR\\Views\\Home\\Detalhes.cshtml",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Home\\Detalhes.cshtml",
               "RelativeToolTip": "CineBR\\Views\\Home\\Detalhes.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAACBAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-21T16:55:30.003Z"
+              "WhenOpened": "2025-04-21T16:55:30.003Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 0,
+              "Title": "FilmesController.cs",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\FilmesController.cs",
+              "RelativeDocumentMoniker": "CineBR\\Controllers\\FilmesController.cs",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\FilmesController.cs",
+              "RelativeToolTip": "CineBR\\Controllers\\FilmesController.cs",
+              "ViewState": "AgIAAJMAAAAAAAAAAAA3wGwAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T19:32:09.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "classifications.json",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\classifications.json",
+              "RelativeDocumentMoniker": "CineBR\\wwwroot\\data\\classifications.json",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\classifications.json",
+              "RelativeToolTip": "CineBR\\wwwroot\\data\\classifications.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-11T19:50:43.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "ComentarioService.cs",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Services\\ComentarioService.cs",
               "RelativeDocumentMoniker": "CineBR\\Services\\ComentarioService.cs",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Services\\ComentarioService.cs",
               "RelativeToolTip": "CineBR\\Services\\ComentarioService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-17T23:11:14.806Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 15,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Models\\Usuario.cs",
               "RelativeDocumentMoniker": "CineBR\\Models\\Usuario.cs",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Models\\Usuario.cs",
               "RelativeToolTip": "CineBR\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T21:24:06.281Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T21:24:06.281Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 32,
               "Title": "admin.css",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\css\\admin.css",
               "RelativeDocumentMoniker": "CineBR\\wwwroot\\css\\admin.css",
@@ -224,92 +352,104 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 26,
               "Title": "CadastroLogin.cshtml",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Usuario\\CadastroLogin.cshtml",
               "RelativeDocumentMoniker": "CineBR\\Views\\Usuario\\CadastroLogin.cshtml",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Usuario\\CadastroLogin.cshtml",
               "RelativeToolTip": "CineBR\\Views\\Usuario\\CadastroLogin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAB8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-17T18:28:40.813Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-17T18:28:40.813Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FilmesController.cs",
-              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\FilmesController.cs",
-              "RelativeDocumentMoniker": "CineBR\\Controllers\\FilmesController.cs",
-              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\FilmesController.cs",
-              "RelativeToolTip": "CineBR\\Controllers\\FilmesController.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAgwC4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-19T19:32:09.402Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 4,
               "Title": "usuarios.json",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\usuarios.json",
               "RelativeDocumentMoniker": "CineBR\\wwwroot\\data\\usuarios.json",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\usuarios.json",
               "RelativeToolTip": "CineBR\\wwwroot\\data\\usuarios.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-05-16T16:42:19.274Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 25,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "CineBR\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "CineBR\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADABAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAGwBAAAAAAAAAAAmwHkBAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-13T22:18:15.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 7,
               "Title": "filmes.json",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\filmes.json",
               "RelativeDocumentMoniker": "CineBR\\wwwroot\\data\\filmes.json",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\filmes.json",
               "RelativeToolTip": "CineBR\\wwwroot\\data\\filmes.json",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAAABYBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABoBAAAAAAAAAAAAABkBAADOAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-11T14:53:42.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
+              "Title": "comentarios.json",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\comentarios.json",
+              "RelativeDocumentMoniker": "CineBR\\wwwroot\\data\\comentarios.json",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\comentarios.json",
+              "RelativeToolTip": "CineBR\\wwwroot\\data\\comentarios.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-09T18:21:42.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "FilmesCurtidosController.cs",
+              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\FilmesCurtidosController.cs",
+              "RelativeDocumentMoniker": "CineBR\\Controllers\\FilmesCurtidosController.cs",
+              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\FilmesCurtidosController.cs",
+              "RelativeToolTip": "CineBR\\Controllers\\FilmesCurtidosController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowCkAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T20:03:55.985Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Filme.cs",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Models\\Filme.cs",
               "RelativeDocumentMoniker": "CineBR\\Models\\Filme.cs",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Models\\Filme.cs",
               "RelativeToolTip": "CineBR\\Models\\Filme.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T06:04:03.25Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 1,
               "Title": "CadastroFilmes.cshtml",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\AdminPages\\CadastroFilmes.cshtml",
               "RelativeDocumentMoniker": "CineBR\\Views\\AdminPages\\CadastroFilmes.cshtml",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\AdminPages\\CadastroFilmes.cshtml",
               "RelativeToolTip": "CineBR\\Views\\AdminPages\\CadastroFilmes.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAIBJwCUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T14:40:56.949Z"
+              "WhenOpened": "2025-04-11T14:40:56.949Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 28,
               "Title": "FilmeService.cs",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Services\\FilmeService.cs",
               "RelativeDocumentMoniker": "CineBR\\Services\\FilmeService.cs",
@@ -321,44 +461,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "CineBR\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Controllers\\HomeController.cs",
               "RelativeToolTip": "CineBR\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAgwL0AAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAKkAAAAAAAAAAAAYwHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-12T06:43:58.779Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "comentarios.json",
-              "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\comentarios.json",
-              "RelativeDocumentMoniker": "CineBR\\wwwroot\\data\\comentarios.json",
-              "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\comentarios.json",
-              "RelativeToolTip": "CineBR\\wwwroot\\data\\comentarios.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-09T18:21:42.321Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 31,
               "Title": "search-box.js",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\js\\search-box.js",
               "RelativeDocumentMoniker": "CineBR\\wwwroot\\js\\search-box.js",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\js\\search-box.js",
               "RelativeToolTip": "CineBR\\wwwroot\\js\\search-box.js",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADsAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAACBjwDsAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-05-19T19:26:35.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 10,
               "Title": "Comentario.cs",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Models\\Comentario.cs",
               "RelativeDocumentMoniker": "CineBR\\Models\\Comentario.cs",
@@ -370,44 +497,43 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "CineBR\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "CineBR\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAAD8AAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADkAAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-04-11T14:36:52.815Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-11T14:36:52.815Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 3,
               "Title": "_LayoutAdmin.cshtml",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeDocumentMoniker": "CineBR\\Views\\Shared\\_LayoutAdmin.cshtml",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\Shared\\_LayoutAdmin.cshtml",
               "RelativeToolTip": "CineBR\\Views\\Shared\\_LayoutAdmin.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-04-11T14:33:42.052Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 6,
               "Title": "style.css",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\css\\style.css",
               "RelativeDocumentMoniker": "CineBR\\wwwroot\\css\\style.css",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\css\\style.css",
               "RelativeToolTip": "CineBR\\wwwroot\\css\\style.css",
-              "ViewState": "AgIAAJoBAAAAAAAAAAAmwO8BAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAJQDAAAAAAAAAAAkwKUDAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-05-10T05:26:56.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 33,
               "Title": "DashboardFilmes.cshtml",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Views\\AdminPages\\DashboardFilmes.cshtml",
               "RelativeDocumentMoniker": "CineBR\\Views\\AdminPages\\DashboardFilmes.cshtml",
@@ -419,25 +545,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "diretor-elenco.js",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\js\\diretor-elenco.js",
               "RelativeDocumentMoniker": "CineBR\\wwwroot\\js\\diretor-elenco.js",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\js\\diretor-elenco.js",
               "RelativeToolTip": "CineBR\\wwwroot\\js\\diretor-elenco.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEIAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAEIAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-04-11T14:40:12.06Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 29,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Program.cs",
               "RelativeDocumentMoniker": "CineBR\\Program.cs",
               "ToolTip": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\Program.cs",
               "RelativeToolTip": "CineBR\\Program.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-13T19:41:19.396Z"
             }

@@ -52,7 +52,7 @@
     "Capa": "/image/cidade_de_deus.jpg",
     "ClassificacaoSelecionada": "16",
     "DataHoraCadastro": "2025-05-14T10:15:33.1234567-03:00",
-    "TrailerLink": "https://www.youtube.com/watch?v=ioUE_5wpg_E",
+    "TrailerLink": "https://www.youtube.com/watch?v=fZJUKixyeXM",
     "ReleaseDate": "2002-08-30T00:00:00",
     "Ativo": true,
     "ExibirNoSite": true
@@ -80,7 +80,7 @@
     "Capa": "/image/tropa_de_elite.jpg",
     "ClassificacaoSelecionada": "18",
     "DataHoraCadastro": "2025-05-14T11:22:44.2345678-03:00",
-    "TrailerLink": "https://www.youtube.com/watch?v=9W1G1qshkUI",
+    "TrailerLink": "https://www.youtube.com/watch?v=uZBiNJQxtGw",
     "ReleaseDate": "2007-10-05T00:00:00",
     "Ativo": true,
     "ExibirNoSite": true
@@ -108,7 +108,7 @@
     "Capa": "/image/o_auto_da_compadecida.jpg",
     "ClassificacaoSelecionada": "12",
     "DataHoraCadastro": "2025-05-14T12:30:55.3456789-03:00",
-    "TrailerLink": "https://www.youtube.com/watch?v=PPBIj2vZaXg",
+    "TrailerLink": "https://www.youtube.com/watch?v=XPuMu_ENzlg",
     "ReleaseDate": "2000-09-15T00:00:00",
     "Ativo": true,
     "ExibirNoSite": true
@@ -134,7 +134,7 @@
     "Capa": "/image/central_do_brasil.jpg",
     "ClassificacaoSelecionada": "12",
     "DataHoraCadastro": "2025-05-14T13:45:12.456789-03:00",
-    "TrailerLink": "https://www.youtube.com/watch?v=Q9w1HvGXxq4",
+    "TrailerLink": "https://www.youtube.com/watch?v=JSWgOhRjJmo",
     "ReleaseDate": "1998-04-03T00:00:00",
     "Ativo": true,
     "ExibirNoSite": true
@@ -161,7 +161,7 @@
     "Capa": "/image/lislabela_e_o_prisioneiro.jpg",
     "ClassificacaoSelecionada": "12",
     "DataHoraCadastro": "2025-05-15T09:18:27.5678901-03:00",
-    "TrailerLink": "https://www.youtube.com/watch?v=Q8Z3X6pX-1A",
+    "TrailerLink": "https://www.youtube.com/watch?v=-Rhroj4p7iQ",
     "ReleaseDate": "2003-08-22T00:00:00",
     "Ativo": true,
     "ExibirNoSite": true
@@ -189,7 +189,7 @@
     "Capa": "/image/o_homem_que_copiava.jpg",
     "ClassificacaoSelecionada": "14",
     "DataHoraCadastro": "2025-05-15T10:25:38.6789012-03:00",
-    "TrailerLink": "https://www.youtube.com/watch?v=3XWZQvWlA2g",
+    "TrailerLink": "https://www.youtube.com/watch?v=-HILhhhGb9w",
     "ReleaseDate": "2003-11-21T00:00:00",
     "Ativo": true,
     "ExibirNoSite": true
@@ -215,7 +215,7 @@
     "Capa": "/image/que_horas_ela_volta.jpg",
     "ClassificacaoSelecionada": "12",
     "DataHoraCadastro": "2025-05-15T11:32:49.7890123-03:00",
-    "TrailerLink": "https://www.youtube.com/watch?v=z5xNoVDmNKs",
+    "TrailerLink": "https://www.youtube.com/watch?v=rHNARG8Mmhw",
     "ReleaseDate": "2015-08-27T00:00:00",
     "Ativo": true,
     "ExibirNoSite": true
@@ -244,7 +244,7 @@
     "Capa": "/image/bacurau.jpg",
     "ClassificacaoSelecionada": "16",
     "DataHoraCadastro": "2025-05-15T12:40:00.8901234-03:00",
-    "TrailerLink": "https://www.youtube.com/watch?v=Hh5k1Z7QYw4",
+    "TrailerLink": "https://www.youtube.com/watch?v=qlheaoLnewE",
     "ReleaseDate": "2019-08-29T00:00:00",
     "Ativo": true,
     "ExibirNoSite": true
@@ -271,8 +271,121 @@
     "Capa": "/image/Hoje_Eu_Quero_Voltar_Sozinho.jpg",
     "ClassificacaoSelecionada": "12",
     "DataHoraCadastro": "2025-05-15T13:47:11.9012345-03:00",
-    "TrailerLink": "https://www.youtube.com/watch?v=45vW9jW2K1M",
+    "TrailerLink": "https://www.youtube.com/watch?v=nLlvQ7sbUTY",
     "ReleaseDate": "2014-04-10T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 11,
+    "Titulo": "Chico Bento e a Goiabeira Maravi\u00F3sa",
+    "Resumo": "Chico Bento e a Goiabeira Maraviosa \u00E9 um filme que narra a luta de Chico Bento para salvar sua amada goiabeira, que est\u00E1 amea\u00E7ada pela constru\u00E7\u00E3o de uma estrada. Junto de seus amigos, como Z\u00E9 Lel\u00E9 e Rosinha, ele se une para resistir a um projeto de urbaniza\u00E7\u00E3o que visa destruir a \u00E1rvore. A hist\u00F3ria \u00E9 marcada por um tom doce e divertido, refletindo a inoc\u00EAncia e a for\u00E7a da amizade.",
+    "Diretor": [
+      "Fernando Fraiha"
+    ],
+    "Elenco": [
+      "Isaac Amendoim",
+      "Ta\u00EDs Ara\u00FAjo",
+      "Guilherme Tavares",
+      "D\u00E9bora Falabella",
+      "Raul Chequer",
+      "Augusto Madeira",
+      "Mauricio de Sousa",
+      "Marion Toro",
+      "Guga Coelho",
+      "Raffiz Camargo"
+    ],
+    "Genero": [
+      "Aventura"
+    ],
+    "Duracao": 90,
+    "Capa": "/image/filme_11.jpg",
+    "ClassificacaoSelecionada": "L",
+    "DataHoraCadastro": "2025-06-11T17:04:02.3201429-03:00",
+    "TrailerLink": "https://www.youtube.com/watch?v=jp54vQvfqEY\u0026pp=0gcJCdgAo7VqN5tD",
+    "ReleaseDate": "2025-01-09T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 12,
+    "Titulo": "dswrtyujyhnbdwe45465ytgfdq",
+    "Resumo": "ghtyukgjfdswr45uygf",
+    "Diretor": [
+      "Walter Salles",
+      "Jos\u00E9 Padilha",
+      "Cac\u00E1 Diegues",
+      "Anna Muylaert"
+    ],
+    "Elenco": [
+      "L\u00E1zaro Ramos",
+      "S\u00F4nia Braga",
+      "Selton Mello",
+      "Wagner Moura"
+    ],
+    "Genero": [
+      "Crime"
+    ],
+    "Duracao": 1234568,
+    "Capa": "/image/filme_12.jpg",
+    "ClassificacaoSelecionada": "14",
+    "DataHoraCadastro": "2025-06-14T12:06:52.0354384-03:00",
+    "TrailerLink": null,
+    "ReleaseDate": "2025-06-14T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 13,
+    "Titulo": "asdwqweqs",
+    "Resumo": "adserwawsdtghadserwawsdtghadserwawsdtgh adserwawsdtghadserwawsdtghadserwawsdtghadserwawsdtghadserwawsdtgh",
+    "Diretor": [
+      "Anna Muylaert",
+      "Walter Salles",
+      "Cac\u00E1 Diegues",
+      "Jos\u00E9 Padilha"
+    ],
+    "Elenco": [
+      "Alice Braga",
+      "L\u00E1zaro Ramos",
+      "Selton Mello",
+      "Wagner Moura"
+    ],
+    "Genero": [
+      "Guerra"
+    ],
+    "Duracao": 1000,
+    "Capa": "/image/filme_13.jpg",
+    "ClassificacaoSelecionada": "14",
+    "DataHoraCadastro": "2025-06-15T17:24:15.0085247-03:00",
+    "TrailerLink": null,
+    "ReleaseDate": "2025-06-15T00:00:00",
+    "Ativo": true,
+    "ExibirNoSite": true
+  },
+  {
+    "Id": 14,
+    "Titulo": "qwadsfwad",
+    "Resumo": "sqwfasfa",
+    "Diretor": [
+      "Fernando Meirelles",
+      "Walter Salles",
+      "Anna Muylaert"
+    ],
+    "Elenco": [
+      "L\u00E1zaro Ramos",
+      "S\u00F4nia Braga",
+      "Selton Mello"
+    ],
+    "Genero": [
+      "Thriller Psicol\u00F3gico"
+    ],
+    "Duracao": 1000,
+    "Capa": "/image/filme_14.jpg",
+    "ClassificacaoSelecionada": "10",
+    "DataHoraCadastro": "2025-06-15T17:26:41.1140318-03:00",
+    "TrailerLink": null,
+    "ReleaseDate": "2025-06-15T00:00:00",
     "Ativo": true,
     "ExibirNoSite": true
   }
