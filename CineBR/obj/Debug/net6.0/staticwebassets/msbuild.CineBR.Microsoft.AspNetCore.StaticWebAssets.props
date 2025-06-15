@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>mm88f76kah</Fingerprint>
-      <Integrity>Utf5SD0Rm1v2vzsHkStTKuK2xil/ylaDNhFpn+/5zl8=</Integrity>
+      <Fingerprint>b9g4ogp5tr</Fingerprint>
+      <Integrity>T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\comentarios.json'))</OriginalItemSpec>
@@ -102,8 +102,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>zo1k0z9wx1</Fingerprint>
-      <Integrity>bb6oO3v43sndE2JKWZl4GH8y4teesJgQP19MffxfYzE=</Integrity>
+      <Fingerprint>4kuc1mo7pi</Fingerprint>
+      <Integrity>TOHUzceOH7KmeU/z7AykhwKjWaHB6dWYwu9nnOSuZkY=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\filmes.json'))</OriginalItemSpec>
@@ -120,8 +120,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>fu7ifh5jjg</Fingerprint>
-      <Integrity>yaRQ707vNduxVa2SCznHEYH3QF2IuBJ661mGM4hj3GA=</Integrity>
+      <Fingerprint>b9g4ogp5tr</Fingerprint>
+      <Integrity>T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\likes.json'))</OriginalItemSpec>
@@ -138,8 +138,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>f68qkl8um3</Fingerprint>
-      <Integrity>GUz3JLbydEHCKLVfrR6DywxIDwjFQpVqjwzH4jnHSUw=</Integrity>
+      <Fingerprint>agi6l95zvv</Fingerprint>
+      <Integrity>6qsHWS4plHVj7IKDwTxX70/wLil4svkS7ru6EWb1nP4=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\data\usuarios.json'))</OriginalItemSpec>
@@ -480,8 +480,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hm02t5vv27</Fingerprint>
-      <Integrity>qZBYZ1z9YxlPrUqzxnCGW5dV+P10qKwwGSfwLhWzdt4=</Integrity>
+      <Fingerprint>u8eqlim30q</Fingerprint>
+      <Integrity>nqdauo4DaM1bY6h6C5CI8FBueSCdrYd17eu5uud5lQ0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\image\filme_14.jpg'))</OriginalItemSpec>

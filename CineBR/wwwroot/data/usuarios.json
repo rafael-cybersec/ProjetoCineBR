@@ -6,21 +6,5 @@
     "Senha": "123456",
     "Tipo": "Admin",
     "ReceberEmails": true
-  },
-  {
-    "Id": "c3398ac7-fed1-4aa8-9048-9bdd3a1f859c",
-    "Nome": "RAFAEL",
-    "Email": "rafaelsarmento100@gmail.com",
-    "Senha": "123456",
-    "Tipo": "Usuario",
-    "ReceberEmails": true
-  },
-  {
-    "Id": "15acbe47-9f1c-4a43-b9b0-f3ab299110ea",
-    "Nome": "paulim",
-    "Email": "paulim@paulim",
-    "Senha": "123456",
-    "Tipo": "Usuario",
-    "ReceberEmails": true
   }
 ]

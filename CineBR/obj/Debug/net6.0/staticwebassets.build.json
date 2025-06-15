@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YK3FDhO31pZbogtOxiFgWHZ3BZaJlZUH4KfNcDyWUwI=",
+  "Hash": "xwiPWXxv05XsHDsda7S6m0Hn4QXtesdKubHiZhX+y1w=",
   "Source": "CineBR",
   "BasePath": "_content/CineBR",
   "Mode": "Default",
@@ -94,8 +94,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "mm88f76kah",
-      "Integrity": "Utf5SD0Rm1v2vzsHkStTKuK2xil/ylaDNhFpn+/5zl8=",
+      "Fingerprint": "b9g4ogp5tr",
+      "Integrity": "T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\data\\comentarios.json"
@@ -136,8 +136,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "zo1k0z9wx1",
-      "Integrity": "bb6oO3v43sndE2JKWZl4GH8y4teesJgQP19MffxfYzE=",
+      "Fingerprint": "4kuc1mo7pi",
+      "Integrity": "TOHUzceOH7KmeU/z7AykhwKjWaHB6dWYwu9nnOSuZkY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\data\\filmes.json"
@@ -157,8 +157,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fu7ifh5jjg",
-      "Integrity": "yaRQ707vNduxVa2SCznHEYH3QF2IuBJ661mGM4hj3GA=",
+      "Fingerprint": "b9g4ogp5tr",
+      "Integrity": "T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\data\\likes.json"
@@ -178,8 +178,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "f68qkl8um3",
-      "Integrity": "GUz3JLbydEHCKLVfrR6DywxIDwjFQpVqjwzH4jnHSUw=",
+      "Fingerprint": "agi6l95zvv",
+      "Integrity": "6qsHWS4plHVj7IKDwTxX70/wLil4svkS7ru6EWb1nP4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\data\\usuarios.json"
@@ -577,8 +577,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "hm02t5vv27",
-      "Integrity": "qZBYZ1z9YxlPrUqzxnCGW5dV+P10qKwwGSfwLhWzdt4=",
+      "Fingerprint": "u8eqlim30q",
+      "Integrity": "nqdauo4DaM1bY6h6C5CI8FBueSCdrYd17eu5uud5lQ0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\image\\filme_14.jpg"
@@ -2617,6 +2617,51 @@
       ]
     },
     {
+      "Route": "data/comentarios.b9g4ogp5tr.json",
+      "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\comentarios.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:45:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b9g4ogp5tr"
+        },
+        {
+          "Name": "label",
+          "Value": "data/comentarios.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU="
+        }
+      ]
+    },
+    {
       "Route": "data/comentarios.json",
       "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\comentarios.json",
       "Selectors": [],
@@ -2627,7 +2672,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "389"
+          "Value": "2"
         },
         {
           "Name": "Content-Type",
@@ -2635,11 +2680,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Utf5SD0Rm1v2vzsHkStTKuK2xil/ylaDNhFpn+/5zl8=\""
+          "Value": "\"T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 15:08:25 GMT"
+          "Value": "Sun, 15 Jun 2025 20:45:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2649,52 +2694,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Utf5SD0Rm1v2vzsHkStTKuK2xil/ylaDNhFpn+/5zl8="
-        }
-      ]
-    },
-    {
-      "Route": "data/comentarios.mm88f76kah.json",
-      "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\comentarios.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "389"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Utf5SD0Rm1v2vzsHkStTKuK2xil/ylaDNhFpn+/5zl8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 15:08:25 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "mm88f76kah"
-        },
-        {
-          "Name": "label",
-          "Value": "data/comentarios.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Utf5SD0Rm1v2vzsHkStTKuK2xil/ylaDNhFpn+/5zl8="
+          "Value": "sha256-T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU="
         }
       ]
     },
@@ -2781,6 +2781,51 @@
       ]
     },
     {
+      "Route": "data/filmes.4kuc1mo7pi.json",
+      "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\filmes.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "11384"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TOHUzceOH7KmeU/z7AykhwKjWaHB6dWYwu9nnOSuZkY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:45:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4kuc1mo7pi"
+        },
+        {
+          "Name": "label",
+          "Value": "data/filmes.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TOHUzceOH7KmeU/z7AykhwKjWaHB6dWYwu9nnOSuZkY="
+        }
+      ]
+    },
+    {
       "Route": "data/filmes.json",
       "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\filmes.json",
       "Selectors": [],
@@ -2791,7 +2836,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "12806"
+          "Value": "11384"
         },
         {
           "Name": "Content-Type",
@@ -2799,11 +2844,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"bb6oO3v43sndE2JKWZl4GH8y4teesJgQP19MffxfYzE=\""
+          "Value": "\"TOHUzceOH7KmeU/z7AykhwKjWaHB6dWYwu9nnOSuZkY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 15 Jun 2025 20:24:15 GMT"
+          "Value": "Sun, 15 Jun 2025 20:45:16 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2813,57 +2858,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-bb6oO3v43sndE2JKWZl4GH8y4teesJgQP19MffxfYzE="
+          "Value": "sha256-TOHUzceOH7KmeU/z7AykhwKjWaHB6dWYwu9nnOSuZkY="
         }
       ]
     },
     {
-      "Route": "data/filmes.zo1k0z9wx1.json",
-      "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\filmes.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "12806"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"bb6oO3v43sndE2JKWZl4GH8y4teesJgQP19MffxfYzE=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 15 Jun 2025 20:24:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "zo1k0z9wx1"
-        },
-        {
-          "Name": "label",
-          "Value": "data/filmes.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-bb6oO3v43sndE2JKWZl4GH8y4teesJgQP19MffxfYzE="
-        }
-      ]
-    },
-    {
-      "Route": "data/likes.fu7ifh5jjg.json",
+      "Route": "data/likes.b9g4ogp5tr.json",
       "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\likes.json",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2873,7 +2873,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "916"
+          "Value": "2"
         },
         {
           "Name": "Content-Type",
@@ -2881,11 +2881,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yaRQ707vNduxVa2SCznHEYH3QF2IuBJ661mGM4hj3GA=\""
+          "Value": "\"T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 15:07:50 GMT"
+          "Value": "Sun, 15 Jun 2025 20:45:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2895,7 +2895,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fu7ifh5jjg"
+          "Value": "b9g4ogp5tr"
         },
         {
           "Name": "label",
@@ -2903,7 +2903,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-yaRQ707vNduxVa2SCznHEYH3QF2IuBJ661mGM4hj3GA="
+          "Value": "sha256-T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU="
         }
       ]
     },
@@ -2918,7 +2918,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "916"
+          "Value": "2"
         },
         {
           "Name": "Content-Type",
@@ -2926,11 +2926,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yaRQ707vNduxVa2SCznHEYH3QF2IuBJ661mGM4hj3GA=\""
+          "Value": "\"T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 15:07:50 GMT"
+          "Value": "Sun, 15 Jun 2025 20:45:29 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2940,12 +2940,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yaRQ707vNduxVa2SCznHEYH3QF2IuBJ661mGM4hj3GA="
+          "Value": "sha256-T1PNoYwrqgwDVLtfmj7L5e0Sq02OEbqHPC8RFhICuUU="
         }
       ]
     },
     {
-      "Route": "data/usuarios.f68qkl8um3.json",
+      "Route": "data/usuarios.agi6l95zvv.json",
       "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\data\\usuarios.json",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2955,7 +2955,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "598"
+          "Value": "202"
         },
         {
           "Name": "Content-Type",
@@ -2963,11 +2963,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GUz3JLbydEHCKLVfrR6DywxIDwjFQpVqjwzH4jnHSUw=\""
+          "Value": "\"6qsHWS4plHVj7IKDwTxX70/wLil4svkS7ru6EWb1nP4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 15:24:42 GMT"
+          "Value": "Sun, 15 Jun 2025 20:44:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2977,7 +2977,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "f68qkl8um3"
+          "Value": "agi6l95zvv"
         },
         {
           "Name": "label",
@@ -2985,7 +2985,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-GUz3JLbydEHCKLVfrR6DywxIDwjFQpVqjwzH4jnHSUw="
+          "Value": "sha256-6qsHWS4plHVj7IKDwTxX70/wLil4svkS7ru6EWb1nP4="
         }
       ]
     },
@@ -3000,7 +3000,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "598"
+          "Value": "202"
         },
         {
           "Name": "Content-Type",
@@ -3008,11 +3008,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"GUz3JLbydEHCKLVfrR6DywxIDwjFQpVqjwzH4jnHSUw=\""
+          "Value": "\"6qsHWS4plHVj7IKDwTxX70/wLil4svkS7ru6EWb1nP4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 14 Jun 2025 15:24:42 GMT"
+          "Value": "Sun, 15 Jun 2025 20:44:47 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3022,7 +3022,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-GUz3JLbydEHCKLVfrR6DywxIDwjFQpVqjwzH4jnHSUw="
+          "Value": "sha256-6qsHWS4plHVj7IKDwTxX70/wLil4svkS7ru6EWb1nP4="
         }
       ]
     },
@@ -4503,51 +4503,6 @@
       ]
     },
     {
-      "Route": "image/filme_14.hm02t5vv27.jpg",
-      "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\image\\filme_14.jpg",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "19016"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/jpeg"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"qZBYZ1z9YxlPrUqzxnCGW5dV+P10qKwwGSfwLhWzdt4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 08 Jun 2025 19:14:36 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "hm02t5vv27"
-        },
-        {
-          "Name": "label",
-          "Value": "image/filme_14.jpg"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-qZBYZ1z9YxlPrUqzxnCGW5dV+P10qKwwGSfwLhWzdt4="
-        }
-      ]
-    },
-    {
       "Route": "image/filme_14.jpg",
       "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\image\\filme_14.jpg",
       "Selectors": [],
@@ -4558,7 +4513,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19016"
+          "Value": "17337"
         },
         {
           "Name": "Content-Type",
@@ -4566,11 +4521,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"qZBYZ1z9YxlPrUqzxnCGW5dV+P10qKwwGSfwLhWzdt4=\""
+          "Value": "\"nqdauo4DaM1bY6h6C5CI8FBueSCdrYd17eu5uud5lQ0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 08 Jun 2025 19:14:36 GMT"
+          "Value": "Sun, 15 Jun 2025 20:26:41 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4580,7 +4535,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-qZBYZ1z9YxlPrUqzxnCGW5dV+P10qKwwGSfwLhWzdt4="
+          "Value": "sha256-nqdauo4DaM1bY6h6C5CI8FBueSCdrYd17eu5uud5lQ0="
+        }
+      ]
+    },
+    {
+      "Route": "image/filme_14.u8eqlim30q.jpg",
+      "AssetFile": "C:\\Users\\ctOS\\Documents\\GitHub\\ProjetoCineBR\\CineBR\\wwwroot\\image\\filme_14.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "17337"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nqdauo4DaM1bY6h6C5CI8FBueSCdrYd17eu5uud5lQ0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 15 Jun 2025 20:26:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u8eqlim30q"
+        },
+        {
+          "Name": "label",
+          "Value": "image/filme_14.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nqdauo4DaM1bY6h6C5CI8FBueSCdrYd17eu5uud5lQ0="
         }
       ]
     },
