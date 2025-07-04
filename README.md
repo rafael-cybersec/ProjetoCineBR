@@ -1,3 +1,5 @@
+A plataforma está disponvel no seguinte link [➡ Acessar Plataforma](https://projetocinebr.onrender.com/)
+
 # 🎬 Projeto CineBR
 
 CineBR é uma plataforma web desenvolvida com o framework ASP.NET Core MVC que tem como objetivo promover e facilitar o acesso a trailers e informações sobre **filmes nacionais brasileiros**. O sistema possui área administrativa, funcionalidades de curtir, comentar, buscar e visualizar trailers, além de um layout responsivo com foco na experiência do usuário.
